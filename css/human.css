@@ -62,20 +62,20 @@ header .wrap .menu li:last-child {margin-right: 20px;}
 
 /* humanscape01-service */
 .service .wrap {overflow: hidden;}
-.service .wrap div {float: right;padding: 50px 0px;cursor: pointer;position: relative;}
-.service .wrap div p {font-size: 16px;color: #999999;margin-bottom: 25px;}
-.service .wrap div h5 {font-size: 20px;color: #464341;}
-.service .wrap div p, .service .wrap div h5 {margin-right: 110px;text-align: right;}
-.service .wrap div:hover p {color: #464341;}
-.service .wrap div::after {content:'';width: 22px;height: 20px;background-image: url(../img/Human\ icon.jpg);background-repeat: no-repeat;display: inline-block;position: absolute;right: 15px;bottom: 67px;}
+.service .wrap .service_right {float: right;padding: 50px 0px;cursor: pointer;position: relative;}
+.service .wrap .service_right p {font-size: 16px;color: #999999;margin-bottom: 25px;}
+.service .wrap .service_right h5 {font-size: 20px;color: #464341;}
+.service .wrap .service_right p, .service .wrap .service_right h5 {margin-right: 110px;text-align: right;}
+.service .wrap .service_right:hover p {color: #464341;}
+.service .wrap .service_right::after {content:'';width: 22px;height: 20px;background-image: url(../img/Human\ icon.jpg);background-repeat: no-repeat;display: inline-block;position: absolute;right: 15px;bottom: 67px;}
 
 /* humanscape02-note */
 .note .wrap {padding-top: 45px;position: relative;height: 460px;}
-.note .wrap div {margin-left: 10px;}
-.note .wrap div h5 {font-size: 35px;color: #43363a;}
-.note .wrap div h1 {font-size: 45px;color: #43363a;margin-bottom: 40px;}
-.note .wrap div p {font-size: 20px;color: #43363a;line-height: 1.7;letter-spacing: -2px;margin-bottom: 20px;}
-.note .wrap div .app {margin-right: 25px;}
+.note .wrap .note_box {margin-left: 10px;}
+.note .wrap .note_box h5 {font-size: 35px;color: #43363a;}
+.note .wrap .note_box h1 {font-size: 45px;color: #43363a;margin-bottom: 40px;}
+.note .wrap .note_box p {font-size: 20px;color: #43363a;line-height: 1.7;letter-spacing: -2px;margin-bottom: 20px;}
+.note .wrap .note_box .app {margin-right: 25px;}
 .note .wrap .img {position: absolute;bottom: 20px;right: -150px;}
 
 /* humanscape02-service_data */
@@ -104,6 +104,22 @@ header .wrap .menu li:last-child {margin-right: 20px;}
 .rare .wrap .rare_box .rare_left {vertical-align: bottom;height: 635px;margin-right: 135px;}
 .rare .wrap .rare_box .rare_left .rare_p {margin-top: 35px;}
 .rare .wrap .rare_box .rare_right {height: 660px;}
+
+/* humanscape02-change */
+.change {background-color: #f7f6f2;}
+.change .wrap {position: relative;}
+.change .wrap .heart {position: absolute;bottom: 0;right: 35px;width: 32%;}
+.change .wrap .change_box {margin-left: 10px;padding: 90px 0;}
+.change .wrap .change_box h5 {font-size: 24px;color: #332c30;line-height: 1.5;margin-bottom: 30px;}
+.change .wrap .change_box p {font-size: 16px;color: #676564;margin-bottom: 25px;}
+.change .wrap .change_box .app {margin-right: 25px;}
+
+/* humanscape02-about */
+.about .wrap .about_left {display: inline-block;padding: 50px 0px;position: relative;cursor: pointer;}
+.about .wrap .about_left p {font-size: 16px;color: #999999;margin-bottom: 25px;margin-left: 110px;}
+.about .wrap .about_left h5 {font-size: 20px;color: #464341;margin-left: 110px;}
+.about .wrap .about_left::before {content:'';width: 22px;height: 20px;background-image: url(../img/Human\ icon01.jpg);background-repeat: no-repeat;display: inline-block;position: absolute;bottom: 67px;left: 10px;}
+.service .wrap .about_left:hover p {color: #464341;}
 
 /* footer */
 footer {background-color: #f9f9f8;}
