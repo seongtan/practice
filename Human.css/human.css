@@ -1,0 +1,132 @@
+/* :hover(호버) 는 마우스오버시 스타일 변경 */
+body {margin:0;padding:0;}
+ul, li {list-style: none;margin: 0;padding:0}
+p,h1,h5 {margin: 0;padding:0}
+
+/* header */
+.wrap {width: 1200px;margin: 0 auto;}
+header .wrap {padding: 35px 0;overflow: hidden;} /* 자식이 float 일때만 overflow:hidden */
+header .wrap img {margin-left: 20px;}
+header .wrap .menu {float: right;}
+header .wrap .menu li {display: inline-block;font-size: 16px;font-weight:bold;color: #222222;margin-right: 40px;}
+header .wrap .menu li:nth-child(5),.wrap .menu li:last-child {margin-right: 0;}
+header .wrap .menu li:nth-child(6) {margin-right: 15px;margin-left: 65px;}
+header .wrap .menu li:last-child {margin-right: 20px;}
+
+/* humanscape-container */
+.container {min-height: 840px;}
+.container .wrap .contents {height: 530px;padding-top: 70px;position: relative;}
+.container .wrap .contents h1 {font-size: 56px;color: #222222;margin-left: 10px;margin-bottom: 35px;}
+.container .wrap .contents h5 {font-size: 22px;color: #707070;margin-left: 10px;}
+.container .wrap .contents img {position: absolute;bottom: 0;right: 20px;}
+.container .wrap .list li {display: inline-block;text-align: center;padding-top: 65px;}
+.container .wrap .list li + li {padding-left: 50px;}
+.container .wrap .list li + li::before {content: '';width: 80px;height: 1px;background-color: #a2a1a0;display: inline-block;}
+.container .wrap .list li span {font-size: 16px;color: #a2a1a0;}
+.container .wrap .list li p {font-size: 24px;color: #a2a1a0;margin-top: 30px;}
+
+/* humanscape01-banner */
+.banner {height: 410px;} /* min-height가 아닌 height 로 먹으니까 잘됨 나도 모름 */
+.banner .wrap {position:relative;height:100%} /* 세로 사이즈를 정해줬으니 자식들도 부모세로값에 맞게 늘려줌 */
+.banner .wrap h1, .banner .wrap p {margin-left: 10px;color: #43363a;}
+.banner .wrap h1 {font-size: 50px;padding-top: 45px;}
+.banner .wrap p {font-size: 20px;line-height: 1.8;margin-top: 35px;letter-spacing: -1px;}
+.banner .wrap img {position: absolute;right:-145px;bottom:-15px}
+
+/* humanscape01-human */
+.human {background-color: #fbfbfa;min-height: 335px;}
+.human .wrap {position:relative;}
+.human .wrap img {position: absolute;top:65px;left:0} /* bottom 기준이 아닌 top 기준으로 하면 잘맞음 왜인지는 모름 */
+.human .wrap div {float: right;margin-top: 85px;}
+.human .wrap div h5 {font-size: 30px;color: #212121;margin-bottom: 30px;}
+.human .wrap div p {font-size: 16px;color: #6b6b6b;line-height: 1.9;}
+
+/* humanscape01-history */
+.history {min-height: 1300px;}
+.history .wrap {padding-top: 130px;}
+.history .wrap h5 {font-size: 30px;color: #332c30;display: inline-block;vertical-align: top;margin-left: 10px;}
+.history .wrap img {margin-left: 200px;}
+
+/* humanscape01-partners */
+.partners {background-color: #fdfdfa;}
+.partners .wrap {overflow: hidden;padding-top: 80px;padding-bottom: 35px;}
+.partners .wrap h5 {font-size: 30px;color: #332c30;display: inline-block;margin-left: 10px;}
+.partners .wrap div {display: inline-block;float: right;margin-right: 10px;}
+.partners .wrap ul li {display: inline-block;}
+.partners .wrap div .partners_list li {font-size: 16px;color: #979797;}
+.partners .wrap div .partners_list li:first-child {color: #212121;font-weight: bold;}
+.partners .wrap div .img_list {width: 872px;}
+.partners .wrap div .img_list li {width: 270px;}
+.partners .wrap div .img_list li + li {margin-left: 25px;}
+.partners .wrap div .img_list li:nth-child(4) {margin-left: 0;margin-top: 5px;}
+
+/* humanscape01-service */
+.service .wrap {overflow: hidden;}
+.service .wrap .service_right {float: right;padding: 50px 0px;cursor: pointer;position: relative;}
+.service .wrap .service_right p {font-size: 16px;color: #999999;margin-bottom: 25px;}
+.service .wrap .service_right h5 {font-size: 20px;color: #464341;}
+.service .wrap .service_right p, .service .wrap .service_right h5 {margin-right: 110px;text-align: right;}
+.service .wrap .service_right:hover p {color: #464341;}
+.service .wrap .service_right::after {content:'';width: 22px;height: 20px;background-image: url(../img/Human\ icon.jpg);background-repeat: no-repeat;display: inline-block;position: absolute;right: 15px;bottom: 67px;}
+
+/* humanscape02-note */
+.note .wrap {padding-top: 45px;position: relative;height: 460px;}
+.note .wrap .note_box {margin-left: 10px;}
+.note .wrap .note_box h5 {font-size: 35px;color: #43363a;}
+.note .wrap .note_box h1 {font-size: 45px;color: #43363a;margin-bottom: 40px;}
+.note .wrap .note_box p {font-size: 20px;color: #43363a;line-height: 1.7;letter-spacing: -2px;margin-bottom: 20px;}
+.note .wrap .note_box .app {margin-right: 25px;}
+.note .wrap .img {position: absolute;bottom: 20px;right: -150px;}
+
+/* humanscape02-service_data */
+.service_data {background-color: #fbfbfa;}
+.service_data .wrap {overflow: hidden;padding: 80px 0;}
+.service_data .wrap .h5 {font-size: 30px;color: #332c30;margin-left: 10px;display: inline-block;}
+.service_data .wrap .data_box {float: right;width: 870px;}
+.service_data .wrap .data_box .data_box02 {margin-top: 80px;}
+.service_data .wrap div, .service_data .wrap .data_box ul li {display: inline-block;}
+.service_data .wrap .data_box ul li {font-size: 18px;color: #979797;margin-left: 40px;}
+.service_data .wrap .data_box ul li:first-child {color: #212121;margin-left: 25px;}
+.service_data .wrap .data_box .data {vertical-align: top;margin-left: 95px;}
+.service_data .wrap .data_box .data h5 {font-size: 24px;color: #212121;margin-bottom: 15px;letter-spacing: -2px;}
+.service_data .wrap .data_box .data .data_p {font-size: 16px;color: #6b6b6b;margin-bottom: 35px;letter-spacing: -1px;}
+.service_data .wrap .data_box .data .data_pp {font-size: 14px;color: #343434;margin-bottom: 15px;line-height: 1.5;letter-spacing: -1px;}
+.service_data .wrap .data_box .data .data_ppp {font-size: 12px;margin-bottom: 0;}
+
+/* humanscape02-rare */
+.rare .wrap {padding: 80px 0;overflow: hidden;}
+.rare .wrap .h5, .rare .wrap .rare_box .box02 {display: inline-block;}
+.rare .wrap .h5 {font-size: 26px;color: #332c30;margin-left: 10px;line-height: 1.5;}
+.rare .wrap .rare_box {float: right;padding-top: 35px;}
+.rare .wrap .rare_box .box02 img {margin-bottom: 100px;}
+.rare .wrap .rare_box .box02 h5 {font-size: 20px;color: #332c30;text-align: center;letter-spacing: -1px;margin-bottom: 20px;}
+.rare .wrap .rare_box .box02 p {font-size: 14px;color: #332c30;line-height: 2;letter-spacing: -1px;}
+.rare .wrap .rare_box .rare_left {vertical-align: bottom;height: 635px;margin-right: 135px;}
+.rare .wrap .rare_box .rare_left .rare_p {margin-top: 35px;}
+.rare .wrap .rare_box .rare_right {height: 660px;}
+
+/* humanscape02-change */
+.change {background-color: #f7f6f2;}
+.change .wrap {position: relative;}
+.change .wrap .heart {position: absolute;bottom: 0;right: 35px;width: 32%;}
+.change .wrap .change_box {margin-left: 10px;padding: 90px 0;}
+.change .wrap .change_box h5 {font-size: 24px;color: #332c30;line-height: 1.5;margin-bottom: 30px;}
+.change .wrap .change_box p {font-size: 16px;color: #676564;margin-bottom: 25px;}
+.change .wrap .change_box .app {margin-right: 25px;}
+
+/* humanscape02-about */
+.about .wrap .about_left {display: inline-block;padding: 50px 0px;position: relative;cursor: pointer;}
+.about .wrap .about_left p {font-size: 16px;color: #999999;margin-bottom: 25px;margin-left: 110px;}
+.about .wrap .about_left h5 {font-size: 20px;color: #464341;margin-left: 110px;}
+.about .wrap .about_left::before {content:'';width: 22px;height: 20px;background-image: url(../img/Human\ icon01.jpg);background-repeat: no-repeat;display: inline-block;position: absolute;bottom: 67px;left: 10px;}
+.service .wrap .about_left:hover p {color: #464341;}
+
+/* footer */
+footer {background-color: #f9f9f8;}
+footer .wrap {padding: 40px 0;position: relative;}
+footer .wrap .footer_box {display: inline-block;}
+footer .wrap .footer_box .footer_human {font-size: 16px;color: #919191;}
+footer .wrap .footer_box .p {font-size: 12px;color: #6b6b6b;}
+footer .wrap .footer_box .pp {margin-top: 10px;margin-bottom: 10px;}
+footer .wrap .footer_box .address {color: #464341;margin-top: 15px;margin-bottom: 10px;}
+footer .wrap button {position: absolute;bottom: 45px;right: 15px;background-color: #fff;border: 1px solid #979797;border-radius: 5px;font-size: 12px;padding: 10px 30px;}
