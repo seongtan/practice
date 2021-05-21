@@ -1,4 +1,4 @@
-상단 gnb 오른쪽 영역 EN , KR 영역을 a태그로 감싸고
+
 현재 humanscape.html, humanscape01.html,  humanscape02.html 을 담고있는 Human이라는 폴더 이름을 Human_KR로 변경
 Human_KR 폴더 전체를 복사해서 이름을 Human_EN 으로 변경
 
