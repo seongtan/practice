@@ -21,11 +21,15 @@ header .wrap .menu li a {color: #222222;}
 .container .wrap .contents h1 {font-size: 56px;color: #222222;margin-left: 10px;margin-bottom: 35px;}
 .container .wrap .contents h5 {font-size: 22px;color: #707070;margin-left: 10px;}
 .container .wrap .contents img {position: absolute;bottom: 0;right: 20px;}
-.container .wrap .list li {display: inline-block;text-align: center;padding-top: 65px;}
 .container .wrap .list li + li {padding-left: 50px;}
-.container .wrap .list li + li::before {content: '';width: 80px;height: 1px;background-color: #a2a1a0;display: inline-block;}
-.container .wrap .list li span {font-size: 16px;color: #a2a1a0;}
-.container .wrap .list li p {font-size: 24px;color: #a2a1a0;margin-top: 30px;}
+.container .wrap .list li span {font-size: 16px;}
+.container .wrap .list li p {font-size: 24px;margin-top: 30px;}
+.container .wrap .list {display: flex;justify-content: space-between;}
+.container .wrap .list li {display: inline-block;text-align: center;padding-top: 65px;flex-basis: 25%;color: #a2a1a0;text-align: center;cursor: pointer;}
+.container .wrap .list li:hover {color: #000;}
+.container .wrap .list li + li {position: relative;}
+.container .wrap .list li + li::before {content: '';position: absolute;left: -25%;bottom: 25%;width: 80px;height: 1px;background-color: #a2a1a0;display: inline-block;}
+
 
 /* humanscape01-banner */
 .banner {height: 410px;} /* min-height가 아닌 height 로 먹으니까 잘됨 나도 모름 */
@@ -39,7 +43,7 @@ header .wrap .menu li a {color: #222222;}
 .human {background-color: #fbfbfa;min-height: 335px;}
 .human .wrap {position:relative;}
 .human .wrap img {position: absolute;top:65px;left:0} /* bottom 기준이 아닌 top 기준으로 하면 잘맞음 왜인지는 모름 */
-.human .wrap div {float: right;margin-top: 85px;}
+.human .wrap div {float: right;margin-top: 85px;margin-right: 70px;}
 .human .wrap div h5 {font-size: 30px;color: #212121;margin-bottom: 30px;}
 .human .wrap div p {font-size: 16px;color: #6b6b6b;line-height: 1.9;}
 
@@ -53,14 +57,20 @@ header .wrap .menu li a {color: #222222;}
 .partners {background-color: #fdfdfa;}
 .partners .wrap {overflow: hidden;padding-top: 80px;padding-bottom: 35px;}
 .partners .wrap h5 {font-size: 30px;color: #332c30;display: inline-block;margin-left: 10px;}
-.partners .wrap div {display: inline-block;float: right;margin-right: 10px;}
+.partners .wrap div {float: right;margin-right: 10px;width: min-content;}
 .partners .wrap ul li {display: inline-block;}
-.partners .wrap div .partners_list li {font-size: 16px;color: #979797;}
-.partners .wrap div .partners_list li:first-child {color: #212121;font-weight: bold;}
-.partners .wrap div .img_list {width: 872px;}
-.partners .wrap div .img_list li {width: 270px;}
-.partners .wrap div .img_list li + li {margin-left: 25px;}
-.partners .wrap div .img_list li:nth-child(4) {margin-left: 0;margin-top: 5px;}
+.partners .wrap div .list {width:872px;}
+.partners .wrap div .list ul {margin-bottom:0}
+.partners .wrap div .list .partners_list li {font-size: 17px;color: #979797;font-weight: bold;float:left;padding:10px 25px;line-height:40px;cursor: pointer;padding-top: 0;}
+.partners .wrap div .list .partners_list li:first-child {color: #212121;margin-left:0}
+.partners .wrap div .list ul li.active {position:relative;border-bottom:2px solid #000;font-weight:bold;z-index:2}
+.partners .wrap div .list .partners_list .line {margin-top:-2px;width:100%;height:2px;background:#ddd;vertical-align:top;float: left;}
+.partners .wrap div .list .partners_list li:hover {color: #212121;position: relative;border-bottom: 2px solid #212121;z-index: 2;}
+.partners .wrap div .partners_box {margin-top: 30px;}
+.partners .wrap div .partners_box .img_list {width: 872px;}
+.partners .wrap div .partners_box .img_list li {width: 270px;}
+.partners .wrap div .partners_box .img_list li + li {margin-left: 25px;}
+.partners .wrap div .partners_box .img_list li:nth-child(4) {margin-left: 0;margin-top: 5px;}
 
 /* humanscape01-service */
 .service .wrap {overflow: hidden;}
@@ -85,15 +95,20 @@ header .wrap .menu li a {color: #222222;}
 .service_data .wrap {overflow: hidden;padding: 80px 0;}
 .service_data .wrap .h5 {font-size: 30px;color: #332c30;margin-left: 10px;display: inline-block;}
 .service_data .wrap .data_box {float: right;width: 870px;}
-.service_data .wrap .data_box .data_box02 {margin-top: 80px;}
+.service_data .wrap .data_box .data_box02 {margin-top: 50px;}
 .service_data .wrap div, .service_data .wrap .data_box ul li {display: inline-block;}
-.service_data .wrap .data_box ul li {font-size: 18px;color: #979797;margin-left: 40px;}
-.service_data .wrap .data_box ul li:first-child {color: #212121;margin-left: 25px;}
 .service_data .wrap .data_box .data {vertical-align: top;margin-left: 95px;}
 .service_data .wrap .data_box .data h5 {font-size: 24px;color: #212121;margin-bottom: 15px;letter-spacing: -2px;}
 .service_data .wrap .data_box .data .data_p {font-size: 16px;color: #6b6b6b;margin-bottom: 35px;letter-spacing: -1px;}
 .service_data .wrap .data_box .data .data_pp {font-size: 14px;color: #343434;margin-bottom: 15px;line-height: 1.5;letter-spacing: -1px;}
 .service_data .wrap .data_box .data .data_ppp {font-size: 12px;margin-bottom: 0;}
+.service_data .wrap .data_box .list {width: 100%;}
+.service_data .wrap .data_box .list ul {margin-bottom: 0;}
+.service_data .wrap .data_box .list ul li {float: left;padding: 10px 20px;font-size: 18px;color: #979797;line-height: 40px;cursor: pointer;;font-weight: bold}
+.service_data .wrap .data_box .list ul li:first-child {color: #212121;margin-left: 0;}
+.service_data .wrap .data_box .list ul li.active {position: relative;border-bottom: 2px solid #212121;z-index: 2;}
+.service_data .wrap .data_box .line {margin-top: -2px;width: 100%;height: 2px;background: #ddd;vertical-align: top;}
+.service_data .wrap .data_box ul li:hover {color: #212121;position: relative;border-bottom: 2px solid #212121;z-index: 2;}
 
 /* humanscape02-rare */
 .rare .wrap {padding: 80px 0;overflow: hidden;}
