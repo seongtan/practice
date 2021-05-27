@@ -30,7 +30,6 @@ header .wrap .menu li a {color: #222222;}
 .container .wrap .list li + li {position: relative;}
 .container .wrap .list li + li::before {content: '';position: absolute;left: -25%;bottom: 25%;width: 80px;height: 1px;background-color: #a2a1a0;display: inline-block;}
 
-
 /* humanscape01-banner */
 .banner {height: 410px;} /* min-height가 아닌 height 로 먹으니까 잘됨 나도 모름 */
 .banner .wrap {position:relative;height:100%} /* 세로 사이즈를 정해줬으니 자식들도 부모세로값에 맞게 늘려줌 */
@@ -39,19 +38,32 @@ header .wrap .menu li a {color: #222222;}
 .banner .wrap p {font-size: 20px;line-height: 1.8;margin-top: 35px;letter-spacing: -1px;}
 .banner .wrap img {position: absolute;right:-145px;bottom:-15px}
 
+/* humanscape01-banner_en */
+.banner_en {height: 390px;}
+.banner_en .wrap p {letter-spacing: 0;}
+.banner_en .wrap img {bottom: -30px;}
+
 /* humanscape01-human */
 .human {background-color: #fbfbfa;min-height: 335px;}
 .human .wrap {position:relative;}
 .human .wrap img {position: absolute;top:65px;left:0} /* bottom 기준이 아닌 top 기준으로 하면 잘맞음 왜인지는 모름 */
-.human .wrap div {float: right;margin-top: 85px;margin-right: 70px;}
+.human .wrap div {width: 570px;float: right;margin-top: 85px;}
 .human .wrap div h5 {font-size: 30px;color: #212121;margin-bottom: 30px;}
 .human .wrap div p {font-size: 16px;color: #6b6b6b;line-height: 1.9;}
+
+/* humanscape01-human_en */
+.human_en {min-height: 405px;}
+.human_en .wrap img {top: 130px;}
 
 /* humanscape01-history */
 .history {min-height: 1300px;}
 .history .wrap {padding-top: 130px;}
 .history .wrap h5 {font-size: 30px;color: #332c30;display: inline-block;vertical-align: top;margin-left: 10px;}
 .history .wrap img {margin-left: 200px;}
+
+/* humanscape01-history_en */
+.history_en .wrap {padding-bottom: 45px;}
+.history_en .wrap img {width: 866px;}
 
 /* humanscape01-partners */
 .partners {background-color: #fdfdfa;}
@@ -72,6 +84,9 @@ header .wrap .menu li a {color: #222222;}
 .partners .wrap div .partners_box .img_list li + li {margin-left: 25px;}
 .partners .wrap div .partners_box .img_list li:nth-child(4) {margin-left: 0;margin-top: 5px;}
 
+/* humanscape01-partners_en */
+.partners_en .wrap div .list .partners_list li {font-size: 18px;}
+
 /* humanscape01-service */
 .service .wrap {overflow: hidden;}
 .service .wrap .service_right {float: right;padding: 50px 0px;cursor: pointer;position: relative;}
@@ -89,6 +104,12 @@ header .wrap .menu li a {color: #222222;}
 .note .wrap .note_box p {font-size: 20px;color: #43363a;line-height: 1.7;letter-spacing: -2px;margin-bottom: 20px;}
 .note .wrap .note_box .app {margin-right: 25px;}
 .note .wrap .img {position: absolute;bottom: 20px;right: -150px;}
+
+/* humanscape02-note_en */
+.note_en .wrap {height: 520px;}
+.note_en .wrap .note_box h5 {font-size: 40px;margin-bottom: 10px;}
+.note_en .wrap .note_box h1 {font-size: 30px;}
+.note_en .wrap .note_box p {letter-spacing: 0;}
 
 /* humanscape02-service_data */
 .service_data {background-color: #fbfbfa;}
@@ -110,6 +131,12 @@ header .wrap .menu li a {color: #222222;}
 .service_data .wrap .data_box .line {margin-top: -2px;width: 100%;height: 2px;background: #ddd;vertical-align: top;}
 .service_data .wrap .data_box ul li:hover {color: #212121;position: relative;border-bottom: 2px solid #212121;z-index: 2;}
 
+/* humanscape02-service_data_en */
+.service_data_en .wrap .data_box .data h5 {letter-spacing: 0;}
+.service_data_en .wrap .data_box .data .data_p {margin-bottom: 30px;letter-spacing: 0;}
+.service_data_en .wrap .data_box .data .data_pp {letter-spacing: 0;margin-bottom: 20px;}
+.service_data_en .wrap .data_box .data .data_by {margin-bottom: 10px;}
+
 /* humanscape02-rare */
 .rare .wrap {padding: 80px 0;overflow: hidden;}
 .rare .wrap .h5, .rare .wrap .rare_box .box02 {display: inline-block;}
@@ -118,9 +145,19 @@ header .wrap .menu li a {color: #222222;}
 .rare .wrap .rare_box .box02 img {margin-bottom: 100px;}
 .rare .wrap .rare_box .box02 h5 {font-size: 20px;color: #332c30;text-align: center;letter-spacing: -1px;margin-bottom: 20px;}
 .rare .wrap .rare_box .box02 p {font-size: 14px;color: #332c30;line-height: 2;letter-spacing: -1px;}
-.rare .wrap .rare_box .rare_left {vertical-align: bottom;height: 635px;margin-right: 135px;}
+.rare .wrap .rare_box .rare_left {height: 635px;margin-right: 135px;}
 .rare .wrap .rare_box .rare_left .rare_p {margin-top: 35px;}
-.rare .wrap .rare_box .rare_right {height: 660px;}
+.rare .wrap .rare_box .rare_right {height: 660px;vertical-align: bottom;}
+
+/* humanscape02-rare_en*/
+.rare_en {height: 960px;}
+.rare_en .wrap .rare_box {margin-right: 25px;}
+.rare_en .wrap .rare_box .rare_left {padding-top: 25px;margin-right: 150px;height: 750px;}
+.rare_en .wrap .rare_box .box02 img {margin-bottom: 85px;}
+.rare_en .wrap .rare_box .box02 h5 {letter-spacing: 0;line-height: 36px;margin-bottom: 10px;}
+.rare_en .wrap .rare_box .box02 p {font-size: 15px;letter-spacing: 0;}
+.rare_en .wrap .rare_box .rare_left .rare_p {margin-top: 25px;}
+.rare_en .wrap .rare_box .rare_right {vertical-align: top;}
 
 /* humanscape02-change */
 .change {background-color: #f7f6f2;}
@@ -131,10 +168,14 @@ header .wrap .menu li a {color: #222222;}
 .change .wrap .change_box p {font-size: 16px;color: #676564;margin-bottom: 25px;}
 .change .wrap .change_box .app {margin-right: 25px;}
 
+/* humanscape02-change_en */
+.change_en .wrap .change_box {padding: 100px 0;}
+.change_en .wrap .change_box h5 {font-size: 30px;}
+
 /* humanscape02-about */
 .about .wrap .about_left {display: inline-block;padding: 50px 0px;position: relative;cursor: pointer;}
 .about .wrap .about_left p {font-size: 16px;color: #999999;margin-bottom: 25px;margin-left: 110px;}
-.about .wrap .about_left h5 {font-size: 20px;color: #464341;margin-left: 110px;}
+.about .wrap .about_left h5 {font-size: 21px;color: #464341;margin-left: 110px;}
 .about .wrap .about_left::before {content:'';width: 22px;height: 20px;background-image: url(../img/Human\ icon01.jpg);background-repeat: no-repeat;display: inline-block;position: absolute;bottom: 67px;left: 10px;}
 .service .wrap .about_left:hover p {color: #464341;}
 
