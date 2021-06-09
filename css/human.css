@@ -6,15 +6,15 @@ a {text-decoration: none;}
 
 /* header */
 .wrap {width: 1200px;margin: 0 auto;}
-header .wrap {padding: 35px 0;overflow: hidden;} /* 자식이 float 일때만 overflow:hidden */
+header .wrap {padding: 35px 0;} /* 자식이 float 일때만 overflow:hidden */
 header .wrap img {margin-left: 20px;}
-header .wrap .menu {float: right;margin-top: 8px;}
-header .wrap .menu li {vertical-align: top;display: inline-block;font-size: 16px;font-weight:bold;color: #222222;margin-right: 40px;}
+header .wrap .menu {float: right;margin-top: 5px;}
+header .wrap .menu li {position: relative;display: inline-block;font-size: 16px;color: #222222;margin-right: 40px;}
 header .wrap .menu li:nth-child(5),.wrap .menu li:last-child {margin-right: 0;}
 header .wrap .menu li:nth-child(6) {margin-right: 15px;margin-left: 65px;}
 header .wrap .menu li:last-child {margin-right: 20px;}
 header .wrap .menu li a {color: #222222;}
-header .wrap .menu .menu_box {display: none;width: 200px;height: 118px;background-color: #7f7f7f;position: absolute;top: 75px;right: 435px;}
+header .wrap .menu .menu_box {top: 30px;left: -15px;display: none;width: 200px;height: 118px;background-color: #7f7f7f;position: absolute;}
 header .wrap .menu .menu_box li {color: #fff;font-size: 16px;width: 65px;display: block;margin-top: 20px;margin-left: 30px;font-weight: 400;}
 header .wrap .menu .menu_box li:first-child {padding-top: 25px;margin-top: 0;}
 header .wrap .menu li:nth-child(2):hover .menu_box {display: block;}
