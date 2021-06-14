@@ -106,7 +106,7 @@ header .wrap .menu li:nth-child(2):hover .menu_box {display: block;}
 .note .wrap .note_box h5 {font-size: 35px;color: #43363a;}
 .note .wrap .note_box h1 {font-size: 45px;color: #43363a;margin-bottom: 40px;}
 .note .wrap .note_box p {font-size: 20px;color: #43363a;line-height: 1.7;letter-spacing: -2px;margin-bottom: 20px;}
-.note .wrap .note_box .app {margin-right: 25px;}
+.note .wrap .note_box .app {margin-right: 20px;}
 .note .wrap .img {position: absolute;bottom: 20px;right: -150px;}
 
 /* humanscape02-note_en */
@@ -170,7 +170,7 @@ header .wrap .menu li:nth-child(2):hover .menu_box {display: block;}
 .change .wrap .change_box {margin-left: 10px;padding: 90px 0;}
 .change .wrap .change_box h5 {font-size: 24px;color: #332c30;line-height: 1.5;margin-bottom: 30px;}
 .change .wrap .change_box p {font-size: 16px;color: #676564;margin-bottom: 25px;}
-.change .wrap .change_box .app {margin-right: 25px;}
+.change .wrap .change_box .app {margin-right: 20px;}
 
 /* humanscape02-change_en */
 .change_en .wrap .change_box {padding: 100px 0;}
@@ -195,9 +195,11 @@ header .wrap .menu li:nth-child(2):hover .menu_box {display: block;}
 
 /* humanscape03-every */
 .every {background-color: #fff;}
-
-
-
+.every .wrap .change_box {padding: 100px 0;}
+.every .wrap .change_box h5 {font-size: 28px;letter-spacing: -1px;}
+.every .wrap .change_box p {letter-spacing: -1px;}
+.every .wrap .change_box img {margin-right: 20px;}
+.every .wrap .heart {bottom: 75px;right: 80px;}
 
 /* footer */
 footer {background-color: #f9f9f8;}
