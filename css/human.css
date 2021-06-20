@@ -189,9 +189,16 @@ header .wrap .menu li:nth-child(2):hover .menu_box {display: block;}
 .rewards .wrap .rewards_box img {width: 146px;height: 51px;margin-right: 20px;}
 .rewards .wrap .xo {float: right;margin-top: 135px;margin-right: 30px;}
 
+/* humanscape03-rewards_en */
+.rewards_en .wrap .rewards_box h1 {margin-bottom: 10px;}
+.rewards_en .wrap .rewards_box h5 {margin-bottom: 40px;}
+
 /* humanscape03-service_re */
 .service_re .wrap .data_box .data_box02 .data h5 {margin-bottom: 5px;}
 .service_re .wrap .data_box .data_box02 .data .data_pp {line-height: 30px;color: #343434;font-size: 16px;}
+
+/* humanscape03-service_re_en */
+.service_re_en .wrap .data_box .list ul li {text-align: center;}
 
 /* humanscape03-every */
 .every {background-color: #fff;}
