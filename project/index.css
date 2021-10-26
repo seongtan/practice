@@ -11,13 +11,25 @@ header .logo_bar .list {float: right;margin: 35px 30px;}
 header .logo_bar .list li {display: inline-block;margin-right: 50px;font-size: 18px;color: #fff;}
 header .logo_bar .list li:last-child {margin-right: 0;}
 
-/* wrap / banner */
-.wrap .bammer {background-image: url(./img/banner.jpg);background-repeat: no-repeat;background-size: 100%;}
+/* wrap */
+.wrap {background-image: url(img/banner.jpg);background-position: bottom;}
+.wrap .banner {width: 1050px;margin: 0 auto;padding: 30px 0 30px 100px;box-sizing: border-box;position: relative;}
+.wrap .banner .title {font-size: 22px;color: #fff;margin-bottom: 30px;}
+.wrap .banner .title_sub {font-size: 32px;color: #fff;} 
+.wrap .banner .but {border: 2px solid #fff;color: #fff;font-size: 20px;padding: 10px 65px;background: none;position: absolute;top: 60px;right: 100px;}
 
-
-
-
-
+/* menu */
+.menu .list {width: 1050px;margin: 0 auto;padding: 70px 0;}
+.menu .list .list_1 {display: inline-block;width: 520px;margin-bottom: 40px;}
+.menu .list .list_1:nth-child(3),
+.menu .list .list_1:nth-child(4) {margin-bottom: 0;}
+.menu .list .list_1 .list_left {display: inline-block;}
+.menu .list .list_1 .list_right {display: inline-block;margin-left: 25px;}
+.menu .list .list_1 .list_right .text {font-size: 18px;}
+.menu .list .list_1 .list_right .text::after {content: 'HOT';font-size: 14px;color: #fff;padding: 2px 8px;background-color: #f0001e;border-radius: 6px;border: 1px solid #000;margin-left: 5px;}
+.menu .list .list_1 .list_right .pi {margin-top: 25px;margin-bottom: 15px;}
+.menu .list .list_1 .list_right .number {display: inline-block;color: #febd10;}
+.menu .list .list_1 .list_right .txt {color: #b0b0b0;margin-top: 10px;}
 
 /* footer */
 footer {background-color: #3d3d3d;}
