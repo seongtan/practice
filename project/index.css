@@ -11,13 +11,21 @@ header .logo_bar .list {float: right;margin: 35px 30px;}
 header .logo_bar .list li {display: inline-block;margin-right: 50px;font-size: 18px;color: #fff;}
 header .logo_bar .list li:last-child {margin-right: 0;}
 
+/* wrap / banner */
+.wrap .bammer {background-image: url(./img/banner.jpg);background-repeat: no-repeat;background-size: 100%;}
+
+
+
+
+
+
 /* footer */
 footer {background-color: #3d3d3d;}
-footer .info {width: 1050px;margin: 0 auto;overflow: hidden;}
+footer .info {width: 1050px;margin: 0 auto;}
 footer .info .f_left {margin: 30px 25px;display: inline-block;}
 footer .info .f_list {margin-bottom: 20px;}
 footer .info .f_list li {display: inline-block;margin-right: 30px;color: #fff;font-size: 14px;}
 footer .info .f_list li:last-child {margin-right: 0;}
 footer .info .f_left .name {margin-bottom: 10px;color: #fff;font-size: 11px;}
-footer .info .f_left .address {margin-bottom: 0;}
+footer .info .f_left .name.address {margin-bottom: 0;}
 footer .info .tel {float: right;margin-top: 30px;margin-right: 30px;color: #fff;font-size: 18px;}
