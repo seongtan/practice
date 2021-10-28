@@ -1,5 +1,6 @@
 ul, li {margin: 0;padding: 0;list-style: none;}
 h3, h5, p {margin: 0;padding: 0;}
+a {text-decoration: none;}
 
 body {margin: 0;padding: 0;}
 
@@ -8,7 +9,8 @@ header {background-color: #febd10;}
 header .logo_bar {width: 1050px;margin: 0 auto;}
 header .logo_bar .logo {margin: 15px 20px;}
 header .logo_bar .list {float: right;margin: 35px 30px;}
-header .logo_bar .list li {display: inline-block;margin-right: 50px;font-size: 18px;color: #fff;}
+header .logo_bar .list li {display: inline-block;margin-right: 50px;}
+header .logo_bar .list li a {color: #fff;}
 header .logo_bar .list li:last-child {margin-right: 0;}
 
 /* wrap */
@@ -33,7 +35,7 @@ header .logo_bar .list li:last-child {margin-right: 0;}
 
 /* footer */
 footer {background-color: #3d3d3d;}
-footer .info {width: 1050px;margin: 0 auto;}
+footer .info {width: 1050px;margin: 0 auto;overflow: hidden;}
 footer .info .f_left {margin: 30px 25px;display: inline-block;}
 footer .info .f_list {margin-bottom: 20px;}
 footer .info .f_list li {display: inline-block;margin-right: 30px;color: #fff;font-size: 14px;}
@@ -41,3 +43,28 @@ footer .info .f_list li:last-child {margin-right: 0;}
 footer .info .f_left .name {margin-bottom: 10px;color: #fff;font-size: 11px;}
 footer .info .f_left .name.address {margin-bottom: 0;}
 footer .info .tel {float: right;margin-top: 30px;margin-right: 30px;color: #fff;font-size: 18px;}
+
+/* index_2 */
+/* box */
+.box {width: 1050px;margin: 0 auto;padding: 60px 0;min-height: 765px;position: relative;}
+.box .lnb {display: inline-block;margin-left: 20px;margin-right: 105px;}
+.box .lnb .page li {color: #acacac;margin-bottom: 25px;}
+.box .lnb .page li:first-child {font-size: 22px;margin-bottom: 45px;color: #000;}
+
+.box .rnb {display: inline-block;position: absolute;}
+.box .rnb .top {margin-bottom: 45px;}
+.box .rnb .top .icon {background-color: #000;}
+.box .rnb .box_2 li {display: inline-block;width: 395px;}
+.box .rnb .box_2 .left {display: inline-block;}
+.box .rnb .box_2 .left .video {padding: 6px 8px;border-radius: 5px;background-color: #febc0e;color: #fff;font-size: 13px;}
+.box .rnb .box_2 .left .video::before {content: url(./img/tv.png);vertical-align: middle;margin-right: 10px;}
+.box .rnb .box_2 .left .video.vi {background-color: #848484;}
+.box .rnb .box_2 .left .video.vi::before {content: url(./img/tv_2.png);}
+.box .rnb .box_2 .left .shop {font-size: 18px;margin: 20px 0;}
+.box .rnb .box_2 .left .p {color: #848484;}
+.box .rnb .box_2 .left .p.pp {margin: 10px 0;}
+.box .rnb .box_2 .left .p.pp::before {content: url(./img/icon.png);margin-right: 10px;vertical-align: middle;}
+.box .rnb .box_2 .right {display: inline-block;}
+.box .rnb .box_2 .right button {display: block;}
+
+/* pagination css 검색해보기 */
