@@ -46,21 +46,21 @@ footer .info .tel {float: right;margin-top: 30px;margin-right: 30px;color: #fff;
 
 /* index_2 */
 /* box */
-.box {width: 1050px;margin: 0 auto;padding: 60px 0;min-height: 765px;position: relative;}
-.box .lnb {display: inline-block;margin-left: 20px;margin-right: 105px;}
+.box {width: 1050px;margin: 0 auto;padding: 60px 0;}
+.box .lnb {display: inline-block;margin-left: 20px;margin-right: 105px;vertical-align: top;}
 .box .lnb .page li {color: #acacac;margin-bottom: 25px;}
 .box .lnb .page li:first-child {font-size: 22px;margin-bottom: 45px;color: #000;}
 
-.box .rnb {display: inline-block;position: absolute;}
+.box .rnb {display: inline-block;}
 .box .rnb .top {margin-bottom: 45px;}
 .box .rnb .top .icon {background-color: #000;}
 
 
-
+.box .rnb .box_2 {width: 790px;}
 .box .rnb .box_2 .line hr {margin: 35px 0;}
-.box .rnb .box_2 li {display: inline-block;width: 395px;}
-.box .rnb .box_2 .li {margin-right: 38px;}
-.box .rnb .box_2 .left {display: inline-block;}
+.box .rnb .box_2 li {display: inline-block;}
+.box .rnb .box_2 .li {margin-right: 27px;}
+.box .rnb .box_2 .left {display: inline-block;margin-right: 30px;}
 .box .rnb .box_2 .left .video {padding: 6px 8px;border-radius: 5px;background-color: #febc0e;color: #fff;font-size: 13px;}
 .box .rnb .box_2 .left .video::before {content: url(./img/tv.png);vertical-align: middle;margin-right: 10px;}
 .box .rnb .box_2 .left .video.vi {background-color: #848484;}
