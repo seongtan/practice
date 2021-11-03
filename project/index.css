@@ -50,7 +50,7 @@ footer .info .tel {float: right;margin-top: 30px;margin-right: 30px;color: #fff;
 .box .lnb {display: inline-block;margin-left: 20px;margin-right: 105px;vertical-align: top;}
 .box .lnb .page li {color: #acacac;margin-bottom: 25px;}
 .box .lnb .page li:first-child {font-size: 22px;margin-bottom: 45px;color: #000;}
-.box .lnb .page li:nth-child(5) {color: #febd10;font-weight: bold;}
+.box .lnb .page li.active {color: #febd10;font-weight: bold;}
 
 .box .rnb {display: inline-block;}
 .box .rnb .top {margin-bottom: 45px;}
