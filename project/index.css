@@ -7,7 +7,7 @@ body {margin: 0;padding: 0;}
 /* header */
 header {background-color: #febd10;}
 header .logo_bar {width: 1050px;margin: 0 auto;}
-header .logo_bar .logo {margin: 10px 20px;}
+header .logo_bar a .logo {margin: 10px 20px;}
 header .logo_bar .list {float: right;margin: 30px 30px;}
 header .logo_bar .list li {display: inline-block;margin-right: 50px;}
 header .logo_bar .list li a {color: #fff;}
