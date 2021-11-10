@@ -93,7 +93,7 @@ footer .info .tel {float: right;margin-top: 30px;margin-right: 30px;color: #fff;
 .box .rnb .date_box .date button {color: #fff;background-color: #000;font-size: 14px;border: 1px solid #000;height: 36px;padding: 0 15px;margin-left: 15px;vertical-align: middle;}
 
 .box .rnb .order_list {margin-top: 60px;}
-.box .rnb .order_list .line hr {border: 1px solid #e8e8e8;background-color: #e8e8e8;margin: 20px 0;}
+.box .rnb .order_list .line hr {border: 1px solid #e8e8e8;background-color: #e8e8e8;margin: 20px 0;width: 790px;}
 .box .rnb .order_list .line.line_2 hr {margin-bottom: 0;}
 .box .rnb .order_list .right {display: inline-block;vertical-align: middle;} 
 .box .rnb .order_list .right .number {font-weight: bold;margin-left: 15px;font-size: 15px;}
@@ -102,3 +102,13 @@ footer .info .tel {float: right;margin-top: 30px;margin-right: 30px;color: #fff;
 .box .rnb .order_list .right.left {margin-left: 90px;}
 .box .rnb .order_list .left .price.time {margin-left: 0;margin-right: 20px;display: inline-block;}
 .box .rnb .order_list .left .result {display: inline-block;border: 1px solid #febd10;border-radius: 5px;background-color: #febd10;color: #fff;width: 28px;padding: 2px 9px;font-size: 14px;}
+
+/* index_4 */
+.box .rnb .img img:first-child {margin-left: 30px;margin-right: 40px;}
+.box .rnb .img img:last-child {float: right;margin-right: 20px;}
+.box .rnb .delivery {position: relative;margin-top: 25px;}
+.box .rnb .delivery::before,
+.box .rnb .delivery::after {content: "";height: 2px;background: #000;width: 790px;position: absolute;}
+
+.box .rnb .top.bottom {margin-top: 60px;}
+.box .rnb .order_list.order_list_bottom .right .price.price_2 {color: #000;}
