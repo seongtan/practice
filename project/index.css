@@ -115,6 +115,7 @@ footer .info .tel {float: right;margin-top: 30px;margin-right: 30px;color: #fff;
 
 /* index_5 */
 .box .rnb .pay {border: 1px solid;border-radius: 15px;padding: 35px 30px;box-sizing: border-box;width: 790px;margin-top: 65px;}
+<<<<<<< HEAD
 .box .rnb .pay .cash strong::before {content: url(./img/icon_5.png);}
 .box .rnb .pay .point strong::before {content: url(./img/icon_6.png);}
 
@@ -124,3 +125,19 @@ footer .info .tel {float: right;margin-top: 30px;margin-right: 30px;color: #fff;
 .box .rnb .container .history_list li + li {padding-top: 15px;}
 
 .box .rnb .container .usage_box {margin-top: 80px;}
+=======
+/* .box .rnb .pay .cash span::before {content: url(./img/icon_5.png);}
+.box .rnb .pay .point span::before {content: url(./img/icon_6.png);} */
+
+.box .rnb .charging_box {margin-top: 40px;}
+
+
+.box .rnb .pay {display:flex}
+.box .rnb .pay .pay_box {position:relative;width:100%;padding:0 20px;text-align:right;}
+.box .rnb .pay .pay_box span {vertical-align:top;line-height:50px}
+.box .rnb .pay .pay_box.cash span {margin-right:30px}
+.box .rnb .pay .pay_box:before {position:absolute;top:-10px;left:0;display:inline-block;margin-right:20px;vertical-align:middle;content:''}
+.box .rnb .pay .pay_box.cash::after {display:inline-block;width:2px;height:100%;background:#ddd;content:''}
+.box .rnb .pay .pay_box.point::before {width:74px;height:65px;background:url(img/icon_6.png) no-repeat;}
+.box .rnb .pay .pay_box.cash::before {width:57px;height:62px;background:url(img/icon_5.png) no-repeat;}
+>>>>>>> b4d63cb71db7e78620331371b9496c27c6dfdc29
