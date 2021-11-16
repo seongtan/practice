@@ -54,9 +54,9 @@ footer .info .tel {float: right;margin-top: 30px;margin-right: 30px;color: #fff;
 .box .lnb .page  li.active {color: #febd10;font-weight: bold;}
 
 .box .rnb {display: inline-block;}
-.box .rnb .top {margin-bottom: 45px;}
 .box .rnb .top .icon {background-color: #000;margin-right: 15px;}
 
+.box .rnb .box_2 {margin-top: 45px;}
 .box .rnb .box_2 .line hr {margin: 35px 0;}
 .box .rnb .box_2 li {display: inline-block;}
 .box .rnb .box_2 .li {margin-right: 27px;}
@@ -81,7 +81,7 @@ footer .info .tel {float: right;margin-top: 30px;margin-right: 30px;color: #fff;
 
 /* index_3 */
 /* box */
-.box .rnb .date_box {width: 780px;}
+.box .rnb .date_box {width: 780px;margin-top: 55px;}
 .box .rnb .date_box .page_wrap {display: inline-block;}
 .box .rnb .date_box .page_wrap a {color: #848484;float: left;padding: 8px 20px;border: 1px solid #d2d2d2;font-size: 14px;}
 .box .rnb .date_box .page_wrap a:first-child {color: #fff;background-color: #febd10;}
@@ -104,6 +104,7 @@ footer .info .tel {float: right;margin-top: 30px;margin-right: 30px;color: #fff;
 .box .rnb .order_list .left .result {display: inline-block;border: 1px solid #febd10;border-radius: 5px;background-color: #febd10;color: #fff;width: 28px;padding: 2px 9px;font-size: 14px;}
 
 /* index_4 */
+.box .rnb .img {margin-top: 45px;}
 .box .rnb .img img:first-child {margin-left: 30px;margin-right: 40px;}
 .box .rnb .img img:last-child {float: right;margin-right: 20px;}
 .box .rnb .delivery {margin-top: 25px;border: 2px solid rgba(000,000,000);border-right: 0;border-left: 0;padding: 30px 0 30px 40px;}
@@ -113,4 +114,8 @@ footer .info .tel {float: right;margin-top: 30px;margin-right: 30px;color: #fff;
 .box .rnb .order_list.order_list_bottom .right .price.price_2 {color: #000;}
 
 /* index_5 */
-.box .rnb .pay .cash::after {content: "";}
+.box .rnb .pay {border: 1px solid;border-radius: 15px;padding: 35px 30px;box-sizing: border-box;width: 790px;margin-top: 65px;}
+.box .rnb .pay .cash span::before {content: url(./img/icon_5.png);}
+.box .rnb .pay .point span::before {content: url(./img/icon_6.png);}
+
+.box .rnb .charging_box {margin-top: 40px;}
