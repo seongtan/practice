@@ -55,5 +55,5 @@ body {background-color: #f2f6f9;margin: 0;padding: 0;}
 .container .con_bottom .ul_box li .check_box {margin-top: 20px;overflow: hidden;display: flex;justify-content: center;}
 .container .con_bottom .ul_box li .check_box button {float: left; border: 2px solid #ddd;background-color: #fff;padding: 12px 0px;font-size: 15px;width: 225px;}
 .container .con_bottom .ul_box li .check_box button:hover {border-color: #2365f2;color:  #2365f2;}
-.container .con_bottom .ul_box li .check_box .but_1 {border-top-left-radius: 5px;border-bottom-left-radius: 5px;}
-.container .con_bottom .ul_box li .check_box .but_2 {border-top-right-radius: 5px;border-bottom-right-radius: 5px;}
+.container .con_bottom .ul_box li .check_box .but_1 {border-radius: 5px 0 0 5px;}
+.container .con_bottom .ul_box li .check_box .but_2 {border-radius: 0 5px 5px 0;}
