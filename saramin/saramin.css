@@ -1,0 +1,59 @@
+ul, li {margin: 0;padding: 0;list-style: none;}
+h1, h3, h5, p {margin: 0;padding: 0;}
+a {text-decoration: none;}
+
+body {background-color: #f2f6f9;margin: 0;padding: 0;}
+
+/* container */
+.container {width: 1450px;margin: 0 auto;}
+.container .find {margin-top: 35px;margin-left: 20px;}
+
+/* con_top */
+.container .con_top {display: flex;}
+
+/* title_box */
+.container .con_top .title_box {margin-left: 20px;width: 50%;margin-top: 50px;}
+.container .con_top .title_box p {margin-top: 25px;}
+
+/* content_box */
+.container .con_top .content_box {display: inline-block;width: 100%;margin-top: 20px;}
+
+/* content_left */
+.container .con_top .content_box .content_left {border: 1px solid #5974ee;border-radius: 5px;background-color: #5974ee;width: 370px;height: 256px;padding: 25px 35px 30px;box-sizing: border-box;display: inline-block;}
+.container .con_top .content_box .content_left .test {border: 1px solid #9badf4;border-radius: 5px;color: #fff;padding: 6px 13px;font-size: 14px;}
+.container .con_top .content_box .content_left .fit {display: block;color: #fff;font-size: 14px;margin-top: 20px;}
+.container .con_top .content_box .content_left span {display: block;color: #c7d0f9;font-size: 14px;margin-top: 10px;}
+.container .con_top .content_box .content_left .but_box {text-align: center;}
+.container .con_top .content_box .content_left .but_box button {background-color: #fff;border: 2px solid #ddd;border-radius: 5px;padding: 10px 75px;font-size: 14px;margin-top: 55px;}
+
+/* content_right */
+.container .con_top .content_box .content_right {display: inline-block;border: 1px solid #223cb5;border-radius: 5px;background-color: #223cb5;width: 550px;float: right;padding: 25px 30px;box-sizing: border-box;} 
+.container .con_top .content_box .content_right .text {color: #b4bde6;}
+.container .con_top .content_box .content_right .but {background-color: #fff;border: 2px solid #ddd;border-radius: 5px;padding: 10px 75px;margin-top: 35px;margin-left: 32px;}
+.con_top .content_box .content_right .top_left {color: #fff;}
+.container .con_top .content_box .content_right .top_right {float: right;color: #b9c1e7;}
+.container .con_top .content_box .content_right .list {margin-top: 35px;}
+.container .con_top .content_box .content_right .list li + li {margin-top: 20px;}
+.container .con_top .content_box .content_right .list li {display: flex;}
+.container .con_top .content_box .content_right .list li .li_box {width: 100%;}
+.container .con_top .content_box .content_right .list li .li_box::before {content: '';width: 10px;height: 25px;background: #2359e0;display: inline-block;vertical-align: top;}
+.container .con_top .content_box .content_right .list li .li_box.li_box2::before {background: #2ca3d1;}
+.container .con_top .content_box .content_right .list li .li_box.li_box3::before {background: #4d68e9;}
+.container .con_top .content_box .content_right .list li .li_box.li_box4::before {background: #748ccb;}
+.container .con_top .content_box .content_right .list li .li_box .txt {color: #b4bde6;}
+.container .con_top .content_box .content_right .list li .li_box .number {color: #fff;float: right;}
+.container .con_top .content_box .content_right .list li .li_box .number.no {margin-right: 25px;}
+
+/* con_bottom */
+.container .con_bottom {border: 1px solid #ddd;border-radius: 5px;box-shadow: 0 0 5px 2px #ddd;height: 300px;margin-top: 20px;}
+.container .con_bottom .ul_box {border-bottom: 2px solid #ddd;display: flex;}
+.container .con_bottom .ul_box li {width: 100%;padding: 30px 0;}
+.container .con_bottom .ul_box li + li {border-left: 2px solid #ddd;}
+.container .con_bottom .ul_box li .txt_box {text-align: center;}
+.container .con_bottom .ul_box li .txt_box strong {font-size: 17px;}
+.container .con_bottom .ul_box li .txt_box span {font-size: 12px;color: #8a919f;margin-left: 5px;}
+.container .con_bottom .ul_box li .txt_box.check_box {margin-top: 20px;overflow: hidden;display: flex;justify-content: center;}
+.container .con_bottom .ul_box li .txt_box.check_box button {float: left; border: 2px solid #ddd;background-color: #fff;padding: 12px 0px;font-size: 15px;width: 225px;}
+.container .con_bottom .ul_box li .txt_box.check_box button:hover {border-color: #2365f2;color:  #2365f2;}
+.container .con_bottom .ul_box li .txt_box.check_box .but_1 {border-top-left-radius: 5px;border-bottom-left-radius: 5px;}
+.container .con_bottom .ul_box li .txt_box.check_box .but_2 {border-top-right-radius: 5px;border-bottom-right-radius: 5px;}
