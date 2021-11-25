@@ -61,7 +61,7 @@ body {background-color: #f2f6f9;margin: 0;padding: 0;}
 
 /* category_box */
 .con_bottom .category_box {margin-top: 30px;}
-.con_bottom .category_box .category strong {margin-left: 15px;margin-right: 20px;}
+.con_bottom .category_box strong {margin-left: 15px;margin-right: 20px;}
 .con_bottom .category_box .category,
 .con_bottom .category_box .category li {display: inline-block;}
 .con_bottom .category_box .category li {border: 1px solid #eff4ff;border-radius: 15px;background-color: #eff4ff;color: #2377f5;padding: 5px 8px;font-size: 14px;}
