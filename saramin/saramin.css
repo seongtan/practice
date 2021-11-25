@@ -57,7 +57,7 @@ body {background-color: #f2f6f9;margin: 0;padding: 0;}
 .container .con_bottom .ul_box li .check_box button:hover {border-color: #2365f2;color:  #2365f2;}
 .container .con_bottom .ul_box li .check_box .but_1 {border-radius: 5px 0 0 5px;}
 .container .con_bottom .ul_box li .check_box .but_2 {border-radius: 0 5px 5px 0;border-left: none;}
-.container .con_bottom .ul_box li .check_box .but_2:hover {border-left: 1px solid #2365f2;}
+.container .con_bottom .ul_box li .check_box .but_2:hover {border-left: 2px solid #2365f2;}
 
 /* category_box */
 .con_bottom .category_box {margin-top: 30px;}
