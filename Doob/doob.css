@@ -15,7 +15,7 @@ header .wrap .menu li a:hover {color: #ff3946;}
 header .wrap .btn {border: none;border-radius: 5px;background: #fff;color: #ff3946;padding: 15px 35px;box-shadow: 1px 4px 5px 1px #ddd;font-weight: bold;}
 
 /* digital */
-.wrap .digital {margin-top: 200px;margin-bottom: 200px;}
+.wrap .digital {padding: 200px 0;}
 .wrap .digital h1 {font-size: 70px;color: #314584;}
 .wrap .digital .text {font-size: 18px;color: #6e757a;margin-top: 45px;}
 .wrap .digital .btn_box {margin-top: 45px;margin-left: 10px;}
