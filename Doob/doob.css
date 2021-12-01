@@ -19,12 +19,20 @@ header .wrap .btn {border: none;border-radius: 5px;background: #fff;color: #ff39
 .wrap .digital h1 {font-size: 70px;color: #314584;}
 .wrap .digital .text {font-size: 18px;color: #6e757a;margin-top: 45px;}
 .wrap .digital .btn_box {margin-top: 45px;margin-left: 10px;}
-.wrap .digital .btn_box button {border: none;border-radius: 30px;background: #ff3946;color: #fff;padding: 17px 35px;font-size: 15px;font-weight: bold;letter-spacing: 1px;}
+.wrap .btn_box button {border: none;border-radius: 30px;background: #ff3946;color: #fff;padding: 17px 35px;font-size: 15px;font-weight: bold;letter-spacing: 1px;}
 .wrap .digital .btn_box .but {background: #fff;color: #314584;}
 .wrap .digital::after {content: '';background-image: url(./img/img_01.png);width: 680px;height: 660px;position: absolute;top: 200px;right: 50px;}
 /* .wrap .digital img {position: absolute;top: 230px;right: 50px;width: 40%;} */
 
 /* covered */
-.wrap .covered {padding: 100px 0;}
+.wrap .covered {display: flex;padding: 100px 0;}
+.wrap .covered .left {width: 35%;}
 .wrap .covered .left h2 {font-size: 45px;color: #314584;}
-.wrap .covered .left button {border: none;border-radius: 30px;background: #ff3946;color: #fff;padding: 17px 35px;font-size: 15px;font-weight: bold;letter-spacing: 1px;margin-top: 45px;margin-left: 10px;}
+.wrap .covered .left .btn_box button {margin-top: 45px;margin-left: 10px;}
+.wrap .covered .right {display: flex;justify-content: space-around;width: 65%;}
+.wrap .covered .right li {box-shadow: 1px 4px 6px 1px #ddd;padding: 40px 45px;height: 400px;width:320px;box-sizing: border-box;}
+.wrap .covered .right li strong {font-size: 27px;color: #314584;line-height: 1.5;}
+.wrap .covered .right li strong::before {content: '';background-repeat: no-repeat;display: block;margin-bottom: 50px;}
+.wrap .covered .right li .graphic::before {background-image: url(./img/icon.jpg);width: 57px;height: 56px;}
+.wrap .covered .right li .app::before {background-image: url(./img/icon_02.jpg);width: 65px;height: 48px;}
+.wrap .covered .right li p {font-size: 14px;color: #314584;line-height: 1.6;margin-top: 30px;margin-bottom: 10px;}
