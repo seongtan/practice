@@ -25,7 +25,7 @@ header .wrap .btn {border: none;border-radius: 5px;background: #fff;color: #ff39
 /* .wrap .digital img {position: absolute;top: 230px;right: 50px;width: 40%;} */
 
 /* covered */
-.wrap .covered {display: flex;padding: 100px 0;}
+.wrap .covered {display: flex;padding: 120px 0;}
 .wrap .covered .left {width: 35%;}
 .wrap .covered .left h2 {font-size: 45px;color: #314584;}
 .wrap .covered .left .btn_box button {margin-top: 45px;margin-left: 10px;}
@@ -36,3 +36,10 @@ header .wrap .btn {border: none;border-radius: 5px;background: #fff;color: #ff39
 .wrap .covered .right li .graphic::before {background-image: url(./img/icon.jpg);width: 57px;height: 56px;}
 .wrap .covered .right li .app::before {background-image: url(./img/icon_02.jpg);width: 65px;height: 48px;}
 .wrap .covered .right li p {font-size: 14px;color: #314584;line-height: 1.6;margin-top: 30px;margin-bottom: 10px;}
+
+/* box */
+.wrap .box {display: flex;justify-content: flex-end;}
+.wrap .box .company::before {content: '';background-image: url(./img/img_02.jpg);background-repeat: no-repeat;width: 657px;height: 376px;position: absolute;left: 100px;}
+.wrap .box .company strong {font-size: 18px;color: #ff3946;}
+.wrap .box .company h3 {font-size: 48px;color: #314584;margin-top: 20px;}
+.wrap .box .company p {font-size: 18px;color: #314584;margin-top: 45px;line-height: 1.5;}
