@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>wadiz</title>
+    <title>와디즈</title>
     <!-- CSS 연결 -->
     <link href="wadiz.css" rel="stylesheet">
 </head>
@@ -12,7 +12,7 @@
 <body>
     <header>
         <div class="wrap">
-            <div class="left">
+            <div class="l_nav">
                 <a href="./wadiz.html" class="logo">wadiz</a>
                 <ul class="menu">
                     <li><a href="#">펀딩예정</a></li>
@@ -21,7 +21,7 @@
                     <li><a href="#">더보기 ∨</a></li>
                 </ul>
             </div>
-            <div class="right">
+            <div class="r_nav">
                 <input type="text" placeholder="어떤 프로젝트를 찾고 계신가요?">
                 <a href="#">로그인</a>
                 <a href="#">회원가입</a>
@@ -40,6 +40,254 @@
             <div class="btn_box">
                 <button type="button"><</button>
                 <button type="button">></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="wrap">
+            <div class="lnb">
+                <div class="title">
+                    <h1>나도 몰랐던 내 취향을 알려줄 펀딩</h1>
+                    <div class="waai">
+                        <strong class="wa">wa</strong>
+                        <strong class="ai" style="color: #00ced1;">ai</strong>
+                        <span class="mark">?</span>
+                        <div class="ai_box">
+                            <p>
+                                와디즈 AI가 서포터님들의 취향을 분석하여 <br> 
+                                맞춤 프로젝트를 추천해요
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <ul class="l_con">
+                    <li>
+                        <div style="width: 245px;height: 135px;background: #ddd;"></div>
+                        <div class="l_content">
+                            <p>
+                                [슈가슈가룬] 내 마음속 동심 하트를 <br>
+                                픽업! 원작자의 스패셜 일러스트굿즈
+                            </p>
+                            <strong class="summary number">525%</strong>
+                            <strong class="summary">캐릭터·굿즈</strong>
+                        </div>
+                    </li>
+                    <li>
+                        <div style="width: 245px;height: 135px;background: #ddd;"></div>
+                        <div class="l_content">
+                            <p>
+                                [HP 프린터를 220g에 담다] HP가 <br>
+                                개발한 압도적 성능의 핸드프린터
+                            </p>
+                            <strong class="summary number">30,022%</strong>
+                            <strong class="summary">테크·가전</strong>
+                        </div>
+                    </li>
+                    <li>
+                        <div style="width: 245px;height: 135px;background: #ddd;"></div>
+                        <div class="l_content">
+                            <p>
+                                몸 피부가 깨끗해질 첫 걸음 ! 등, 가슴 한 <br>
+                                번에 관리해주는 몸팩!
+                            </p>
+                            <strong class="summary number">1,024%</strong>
+                            <strong class="summary">뷰티</strong>
+                        </div>
+                    </li>
+                    <li class="li">
+                        <div style="width: 245px;height: 135px;background: #ddd;"></div>
+                        <div class="l_content">
+                            <p>
+                                [샤오미 국내 첫 정식 발매] 넷플릭스 <br>
+                                공식 지원 스마트 컴팩트 프로젝터
+                            </p>
+                            <strong class="summary number">9,219%</strong>
+                            <strong class="summary">테크·가전</strong>
+                        </div>
+                    </li>
+                    <li class="li">
+                        <div style="width: 522px;height: 135px;background: #ddd;"></div>
+                        <div class="l_content plan">
+                            <span>기획전</span>
+                            <p>사람과 자연을 생각한 착한 펀딩</p>
+                        </div>
+                    </li>
+                </ul>
+                <div class="but">
+                    <button type="button">
+                        <strong style="color: #00a2a2;">AI</strong>
+                        <strong style="margin-right: 3px;">추천 더보기</strong>
+                        <strong style="color: #00a2a2;">1</strong>
+                        <strong>/3</strong>
+                    </button>
+                </div>
+            </div>
+            <div class="rnb">
+                <h2>실시간 랭킹</h2>
+                <div class="menu_box">
+                    <div class="menu">
+                        <label for="funding">
+                            <input type="radio" id="funding" name="gener">
+                            <span>펀딩하기</span>
+                        </label>
+                        <label for="purchase">
+                            <input type="radio" id="purchase" name="gener">
+                            <span>구매하기</span>
+                        </label>
+                        <label for="invest">
+                            <input type="radio" id="invest" name="gener">
+                            <span>투자하기</span>
+                            <span class="Proceeding">진행 중</span>
+                        </label>
+                    </div>
+                    <div class="waai">
+                        <span class="mark">?</span>
+                        <div class="ai_box">
+                            <p>
+                                조회 시간을 기준으로 24시간 내 프로젝트 <br> 
+                                참여자가 많은 순으로 노출됩니다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <ul class="r_con" id="funding_content">
+                    <li>
+                        <div class="r_content">
+                            <strong class="absol">1</strong>
+                            <p>
+                                [임상완료] 딱 2주면 해결되는 색소침착. <br>
+                                기미완화! I 2주 미백
+                            </p>
+                            <strong class="summary number">3,175%</strong>
+                            <strong class="summary">뷰티</strong>
+                        </div>
+                        <div style="width: 95px;height: 66px;background: #ddd;"></div>
+                    </li>
+                    <li>
+                        <div class="r_content">
+                            <strong class="absol">2</strong>
+                            <p>
+                                바이오 소재 연구소에서 만든 <고밀도 <br>
+                                입자 텀블러> I 재생펠트 슬리브까지 
+                            </p>
+                            <strong class="summary number">812%</strong>
+                            <strong class="summary">홈·리빙</strong>
+                        </div>
+                        <div style="width: 95px;height: 66px;background: #ddd;"></div>
+                    </li>
+                    <li>
+                        <div class="r_content">
+                            <strong class="absol">3</strong>
+                            <p>
+                                패딩 2개도 여유롭게 압축! [압.파]로 <br>
+                                부피도 구김도 반으로
+                            </p>
+                            <strong class="summary number">1.968%</strong>
+                            <strong class="summary">패션·잡화</strong>
+                        </div>
+                        <div style="width: 95px;height: 66px;background: #ddd;"></div>
+                    </li>
+                    <li>
+                        <div class="r_content">
+                            <strong class="absol">4</strong>
+                            <p>
+                                [국내생산] 육아 전쟁 그만! 파우치 음료 <br>
+                                흘림방지 퍼기 문어캡
+                            </p>
+                            <strong class="summary number">417%</strong>
+                            <strong class="summary">홈·리빙</strong>
+                        </div>
+                        <div style="width: 95px;height: 66px;background: #ddd;"></div>
+                    </li>
+                    <li>
+                        <div class="r_content">
+                            <strong class="absol">5</strong>
+                            <p>
+                                [각질OUT] 각질, 이제 힘들게 벗겨내지 <br>
+                                마세요. 가볍게 효소바디하세요
+                            </p>
+                            <strong class="summary number">9,864%</strong>
+                            <strong class="summary">뷰티</strong>
+                        </div>
+                        <div style="width: 95px;height: 66px;background: #ddd;"></div>
+                    </li>
+                </ul>
+                <ul class="r_con r_con_2" id="purchase_content">
+                    <li>
+                        <div class="r_content">
+                            <strong class="absol">1</strong>
+                            <p>
+                                한 병 7,900원으로 엔진을 새것처럼 바꿔 주는 마 <br>
+                                법! I 연료첨가제
+                            </p>
+                            <span>6,034명 참여</span>
+                            <strong class="summary kinds">여행·스포츠</strong>
+                        </div>
+                        <div style="width: 66px;height: 66px;background: #ddd;"></div>
+                    </li>
+                    <li>
+                        <div class="r_content">
+                            <strong class="absol">2</strong>
+                            <p>
+                                멀티가 안되는데 멀티탭? 진짜 멀티를 보여줄께!! <br>
+                                PD 기능 타워탭
+                            </p>
+                            <span>887명 참여</span>
+                            <strong class="summary kinds">테크·가전</strong>
+                        </div>
+                        <div style="width: 66px;height: 66px;background: #ddd;"></div>
+                    </li>
+                    <li>
+                        <div class="r_content">
+                            <strong class="absol">3</strong>
+                            <p>
+                                [게릴라특가] 집에서 즐기는 광화문맛집 '힐사이드 <br>
+                                테이블' 두유치즈 SET
+                            </p>
+                            <span>648명 참여</span>
+                            <strong class="summary kinds">푸드</strong>
+                        </div>
+                        <div style="width: 66px;height: 66px;background: #ddd;"></div>
+                    </li>
+                    <li>
+                        <div class="r_content">
+                            <strong class="absol">4</strong>
+                            <p>
+                                [한정수량] 3초만에내발에 착! 감기는착화감 I 티 <br>
+                                바트 런닝화 그라데이션
+                            </p>
+                            <span>1,488명 참여</span>
+                            <strong class="summary kinds">패션·잡화</strong>
+                        </div>
+                        <div style="width: 66px;height: 66px;background: #ddd;"></div>
+                    </li>
+                    <li>
+                        <div class="r_content">
+                            <strong class="absol">5</strong>
+                            <p>
+                                [4억펀딩] 고양이털,먼지,물까지 뭐든지 쓸리는 슈 <br>
+                                퍼빗자루 쓰리잘비
+                            </p>
+                            <span>3,398명 참여</span>
+                            <strong class="summary kinds">리빙·베이비</strong>
+                        </div>
+                        <div style="width: 66px;height: 66px;background: #ddd;"></div>
+                    </li>
+                </ul>
+                <ul class="r_con r_con_2 r_con_3" id="invest_content">
+                    <li>
+                        <div class="r_content">
+                            <strong class="absol">1</strong>
+                            <p>
+                                [푸드테그 투자] 당뇨/임신성 당뇨 <br>
+                                영양관리 플랫폼
+                            </p>
+                            <strong class="summary number">51%</strong>
+                        </div>
+                        <div style="width: 95px;height: 66px;background: #ddd;"></div>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
