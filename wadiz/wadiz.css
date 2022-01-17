@@ -14,8 +14,8 @@ header .wrap .l_nav .menu li a {font-size: 20px;font-weight: bold;color: #000;le
 header .wrap .l_nav .menu li a:hover {color: rgba(33,37,41,.86);}
 header .wrap .r_nav input {border: 1px solid #00c4c4;border-radius: 20px;outline: none;padding: 11px 40px;font-size: 13.5px;width: 196px;margin-right: 10px;}
 header .wrap .r_nav a {color: #60656a;font-size: 14px;padding: 0 5px;}
-header .wrap .r_nav button {border: 1px solid #00c4c4;border-radius: 3px;color: #00c4c4;background: #fff;font-size: 15px;padding: 7px 15px;margin-left: 10px;}
-header .wrap .r_nav button:hover {color: #fff;background-color: #00c4c4;cursor: pointer;}
+header .wrap .r_nav button {border: 1px solid #00c4c4;border-radius: 3px;color: #00c4c4;background: #fff;font-size: 15px;padding: 7px 15px;margin-left: 10px;cursor: pointer;}
+header .wrap .r_nav button:hover {color: #fff;background-color: #00c4c4;}
 
 /* box */
 .box {background: #ddd;height: 288px;}
@@ -58,8 +58,8 @@ header .wrap .r_nav button:hover {color: #fff;background-color: #00c4c4;cursor: 
 .container .wrap .rnb .content_box input {display: none;}
 .container .wrap .rnb .content_box .menu label + label {margin-left: 13px;}
 .container .wrap .rnb .content_box .menu label {font-size: 15px;letter-spacing: -1px;color: #868e96;cursor: pointer;}
-.container .wrap .rnb .content_box .menu .Proceeding {font-size: 10px;letter-spacing: -1px;border-radius: 4px;background-color: #557cf2;color: #fff;padding: 3px 5px;position: relative;top: -2px;left: 2px;}
-.container .wrap .rnb .content_box .menu .Proceeding::after {content: '';height: 1px;border-style: solid;border-width: 4px 7px 4px 0;border-color: transparent #557cf2 transparent transparent;position: absolute;top: 5px;left: -4px;}
+.container .wrap .rnb .content_box .menu .proceeding {font-size: 10px;letter-spacing: -1px;border-radius: 4px;background-color: #557cf2;color: #fff;padding: 3px 5px;position: relative;top: -2px;left: 2px;}
+.container .wrap .rnb .content_box .menu .proceeding::after {content: '';height: 1px;border-style: solid;border-width: 4px 7px 4px 0;border-color: transparent #557cf2 transparent transparent;position: absolute;top: 5px;left: -4px;}
 .container .wrap .rnb .content_box .menu .waai {float: right;}
 .container .wrap .rnb .content_box .r_con {margin-top: 20px;display: none;}
 .container .wrap .rnb .content_box .r_con li {display: flex;justify-content: space-between;position: relative;}
@@ -71,7 +71,7 @@ header .wrap .r_nav button:hover {color: #fff;background-color: #00c4c4;cursor: 
 .container .wrap .rnb .content_box .r_con.r_con_2 li .r_content .summary.kinds {font-size: 12px;}
 .container .wrap .rnb .content_box [id^=funding]:checked ~ .menu .funding[for*=funding],
 .container .wrap .rnb .content_box [id^=purchase]:checked ~ .menu .purchase[for*=purchase],
-.container .wrap .rnb .content_box [id^=invest]:checked ~ .menu .invest[for*=invest] {border-bottom: 1px solid;color: #000;color: #000;}
+.container .wrap .rnb .content_box [id^=invest]:checked ~ .menu .invest[for*=invest] {border-bottom: 1px solid #000;color: #000;}
 .container .wrap .rnb .content_box #funding:checked ~ #funding_content,
 .container .wrap .rnb .content_box #purchase:checked ~ #purchase_content,
 .container .wrap .rnb .content_box #invest:checked ~ #invest_content {display: block;}
