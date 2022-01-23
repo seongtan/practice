@@ -29,9 +29,8 @@ header .wrap .r_nav a {color: #60656a;font-size: 14px;padding: 0 5px;}
 .banner .wrap .btn_box button:hover {color: #fff;cursor: pointer;}
 
 /* container funding */
-.container {border-bottom: 1px solid #f0f2f5;}
+.container {border-bottom: 1px solid #f0f2f5;padding: 40px 0;}
 .container.funding .wrap {display: flex;}
-.container .wrap {padding: 40px 0;}
 .container .wrap .lnb {width: 66%;padding-right: 60px;box-sizing: border-box;}
 .container .wrap .title {display: flex;justify-content: space-between;align-items: center;}
 .container .wrap .text {font-size: 27px;letter-spacing: -2px;}
@@ -77,27 +76,35 @@ header .wrap .r_nav a {color: #60656a;font-size: 14px;padding: 0 5px;}
 .container .wrap .rnb .content_box #purchase:checked ~ #purchase_content,
 .container .wrap .rnb .content_box #invest:checked ~ #invest_content {display: block;}
 
-/* con container */
-.con .wrap .store {font-size: 14px;border-radius: 14px;background-color: #3364ff;padding: 4px 12px;color: #fff;display: inline-block;}
-.con .wrap .title {margin-top: 8px;}
-.con .wrap .l_con li .five {width: 200px;height: 200px;background: #ddd;border-radius: 8px;position: relative;}
-.con .wrap .l_con li .five::before {content: 'wadiz Only';color: #fff;font-size: 10px;font-weight: bold;background: #00ced1;padding: 2px 5px;border-radius: 0 3px 3px 0;position: absolute;top: 15px;left: 1px;}
+/* container */
+.container .wrap .store {font-size: 14px;border-radius: 14px;background-color: #3364ff;padding: 4px 12px;color: #fff;display: inline-block;}
+.container .wrap .title {margin-top: 8px;}
+.container .wrap .l_con li .five {width: 200px;height: 200px;background: #ddd;border-radius: 8px;position: relative;}
+.container .wrap .l_con li .five::before {content: 'wadiz Only';color: #fff;font-size: 10px;font-weight: bold;background: #00ced1;padding: 2px 5px;border-radius: 0 3px 3px 0;position: absolute;top: 15px;left: 1px;}
 
-/* project container */
-.project .wrap h4 {font-size: 20px;letter-spacing: -1.5px;}
-.project .wrap h4 strong {color: #00a2a2;}
-.project .wrap .l_con li .txt_box.font p {width: 186px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+/* container project */
+.container.project .wrap h4 {font-size: 20px;letter-spacing: -1.5px;}
+.container.project .wrap h4 strong {color: #00a2a2;}
+.container.project .wrap .l_con li .txt_box.font p {width: 186px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
 
-/* page container */
-.page.container {border: none;}
-.page .ul {display: flex;}
-.page .ul li {border: 1px solid #e6eaed;border-radius: 3px;}
-.page .ul li + li {margin-left: 42px;}
-.page .ul li .family {text-align: center;height: 54px;line-height: 54px;}
-.page .ul li .family a {font-size: 15px;letter-spacing: -0.5px;color: #00b2b2;}
-.page .ul li .family a::after {content: '〉';font-size: 12px;vertical-align: top;margin-left: 10px;}
-.page .ul li .btm {height: 54px;padding: 12px 16px;box-sizing: border-box;}
-.page .ul li .btm .btm_txt {display: inline-block;margin-top: -5px;}
-.page .ul li .btm .btm_txt strong {font-size: 15px;letter-spacing: -1px;}
-.page .ul li .btm .btm_txt span {display: block;font-size: 13px;color: #90949c;line-height: 1.2;letter-spacing: -1px;}
-.page .ul li .btm .button {padding: 0 10px;line-height: 26px;font-size: 12px;margin: 0;float: right;}
+/* container page */
+.container.page {border: none;}
+.container .wrap .ul {display: flex;}
+.container .wrap .ul li {border: 1px solid #e6eaed;border-radius: 3px;}
+.container.page .wrap .ul li + li {margin-left: 42px;}
+.container.page .wrap .ul li .family {text-align: center;height: 54px;line-height: 54px;}
+.container.page .wrap .ul li .family a {font-size: 15px;letter-spacing: -0.5px;color: #00b2b2;}
+.container.page .wrap .ul li .family a::after {content: '〉';font-size: 12px;vertical-align: top;margin-left: 10px;}
+.container.page .wrap .ul li .btm {height: 54px;padding: 12px 16px;box-sizing: border-box;}
+.container.page .wrap .ul li .btm .btm_txt {display: inline-block;margin-top: -5px;}
+.container.page .wrap .ul li .btm .btm_txt strong {font-size: 15px;letter-spacing: -1px;}
+.container.page .wrap .ul li .btm .btm_txt span {display: block;font-size: 13px;color: #90949c;line-height: 1.2;letter-spacing: -1px;}
+.container.page .wrap .ul li .btm .button {padding: 0 10px;line-height: 26px;font-size: 12px;float: right;}
+
+/* container early */
+.container.early .wrap .benefits {display: flex;justify-content: space-between;align-items: flex-end;margin-top: -8px;}
+.container.early .wrap .benefits p {font-size: 14px;letter-spacing: -1px;}
+.container.early .wrap .benefits .but {display: inline-flex;align-items: flex-end;}
+.container.early .wrap .benefits .but button {border: none;background: #fff;font-size: 15px;width: 34px;height: 34px;color: rgba(0,0,0,.15);}
+.container.early .wrap .benefits .but .number {cursor: pointer;color: rgba(0,0,0,.54);}
+.container.early .wrap .benefits .but .number.won {color: #00b2b2;}
