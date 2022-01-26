@@ -81,6 +81,7 @@ header .wrap .r_nav a {color: #60656a;font-size: 14px;padding: 0 5px;}
 .container .wrap .title {margin-top: 8px;}
 .container .wrap .l_con li .five {width: 200px;height: 200px;background: #ddd;border-radius: 8px;position: relative;}
 .container .wrap .l_con li .five::before {content: 'wadiz Only';color: #fff;font-size: 10px;font-weight: bold;background: #00ced1;padding: 2px 5px;border-radius: 0 3px 3px 0;position: absolute;top: 15px;left: 1px;}
+.container .wrap .l_con li .txt_box .t_box {margin-top: 3px;}
 
 /* container project */
 .container.project .wrap h4 {font-size: 20px;letter-spacing: -1.5px;}
@@ -89,12 +90,11 @@ header .wrap .r_nav a {color: #60656a;font-size: 14px;padding: 0 5px;}
 
 /* container page */
 .container.page {border: none;}
-.container .wrap .ul {display: flex;}
+.container .wrap .ul {display: flex;justify-content: space-between;}
 .container .wrap .ul li {border: 1px solid #e6eaed;border-radius: 3px;}
-.container.page .wrap .ul li + li {margin-left: 42px;}
-.container.page .wrap .ul li .family {text-align: center;height: 54px;line-height: 54px;}
-.container.page .wrap .ul li .family a {font-size: 15px;letter-spacing: -0.5px;color: #00b2b2;}
-.container.page .wrap .ul li .family a::after {content: '〉';font-size: 12px;vertical-align: top;margin-left: 10px;}
+.container .wrap .ul li .family {text-align: center;line-height: 54px;}
+.container .wrap .ul li .family a {font-size: 15px;letter-spacing: -0.5px;color: #00b2b2;}
+.container .wrap .ul li .family a::after {content: '〉';font-size: 12px;vertical-align: top;margin-left: 10px;}
 .container.page .wrap .ul li .btm {height: 54px;padding: 12px 16px;box-sizing: border-box;}
 .container.page .wrap .ul li .btm .btm_txt {display: inline-block;margin-top: -5px;}
 .container.page .wrap .ul li .btm .btm_txt strong {font-size: 15px;letter-spacing: -1px;}
@@ -108,3 +108,14 @@ header .wrap .r_nav a {color: #60656a;font-size: 14px;padding: 0 5px;}
 .container.early .wrap .benefits .but button {border: none;background: #fff;font-size: 15px;width: 34px;height: 34px;color: rgba(0,0,0,.15);}
 .container.early .wrap .benefits .but .number {cursor: pointer;color: rgba(0,0,0,.54);}
 .container.early .wrap .benefits .but .number.won {color: #00b2b2;}
+.container.early .wrap .ul {margin-top: 28px;}
+.container.early .wrap .ul li .funding {width: 403px;padding: 6px 16px;box-sizing: border-box;}
+.container.early .wrap .ul li .funding span {font-size: 13px;}
+.container.early .wrap .ul li .funding .txt_box {height: 60px;}
+.container.early .wrap .ul li .funding .txt_box p {font-weight: bold;letter-spacing: -0.5px;}
+.container.early .wrap .ul li .funding .txt_box .t_box {margin-top: -2px;}
+.container.early .wrap .ul li .funding .price {line-height: 18px;border: 1px solid #e6eaed;border-radius: 3px;margin-top: 9px;padding: 12px 16px;box-sizing: border-box;}
+.container.early .wrap .ul li .funding .price strong {display: block;font-size: 13px;letter-spacing: -.02em;}
+.container.early .wrap .ul li .funding .price p {font-size: 13px;height: 36px;line-height: unset;}
+.container.early .wrap .ul li .funding .family {line-height: 36px;margin-top: 6px;}
+.container.early .wrap .ul li .funding .family a {color: rgba(0,0,0,.54);}
