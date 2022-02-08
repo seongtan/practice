@@ -35,7 +35,7 @@ header .wrap .r_nav a {color: #60656a;font-size: 14px;padding: 0 5px;}
 .container .wrap .title {display: flex;justify-content: space-between;align-items: center;}
 .container .wrap .text {font-size: 27px;letter-spacing: -2px;}
 .container .wrap .mark {font-size: 12px;color: #868e96;border: 1px solid #868e96;border-radius: 10px;padding: 0px 5px;cursor: pointer;}
-.container .wrap .waai {position: relative;}
+.container .wrap .waai {height: 23px;position: relative;}
 .container .wrap .ai_box {display: none;background: #343a40;color: #fff;padding: 12px;box-sizing: border-box;border-radius: 3px;position: absolute;width: 235px;top: 23px;right: -5px;z-index: 1;}
 .container .wrap .ai_box p {font-size: 12px;letter-spacing: -1px;line-height: 1.5;}
 .container .wrap .waai:hover .mark {color: #fff;background: #343a40;border-color: #343a40;}
