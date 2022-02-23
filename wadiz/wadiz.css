@@ -93,7 +93,7 @@ header .wrap .r_nav a {color: #60656a;font-size: 14px;padding: 0 5px;}
 /* container project */
 .container.project .wrap h4 {font-size: 20px;letter-spacing: -1.5px;}
 .container.project .wrap h4 strong {color: #00a2a2;}
-.container.project .wrap .l_con li .img {width: 186px;height: 103px;background: #ddd;}
+.container.project .wrap .l_con li .img {width: 186px;height: 103px;}
 .container.project .wrap .l_con li .image {width: 405px;height: 103px;}
 .container.project .wrap .l_con li .txt_box.word p {width: 186px;}
 
@@ -211,22 +211,24 @@ footer .wrap .app {width: 240px;text-align: center;margin-top: 45px;}
 footer .wrap .app a {font-size: 12px;color: #000;}
 footer .wrap .app a:first-child {margin-right: 45px;}
 
+footer .fixed {display: none;}
+
 @media screen and (max-width:767px){
 body {overflow-x: hidden;overflow-y: auto;} 
 
 header,.container.early,.container.plan,.container.trend,.container.page.open {display: none;}
 
 /* wrap media */
-.wrap {width: 96%;}
+.wrap {width: 100%;padding: 0 15px;box-sizing: border-box;}
 .wrap.media {display: block;}
 .wrap.media .top {display: flex;justify-content: space-between;align-items: center;height: 48px;}
 .wrap.media .top .btn button {font-size: 15px;letter-spacing: -1px;background: #fff;border: none;padding: 0 8px;cursor: pointer;}
 
-/* sticky */
-.sticky  {display: flex;justify-content: space-between;align-items: center;height: 44px;background: #fff;border-bottom: 1px solid #f0f2f5;position: sticky;top: 0;z-index: 5;padding: 0 15px;}
-.sticky  li a {font-size: 15px;font-weight: bold;color: #60656a;line-height: 43px;}
-.sticky  li:first-child a {color: #000;}
-.sticky  li:first-child a::after {content: '';height: 3px;display: block;background: #000;}
+/* wrap sticky */
+.wrap.sticky  {display: flex;justify-content: space-between;align-items: center;height: 44px;background: #fff;border-bottom: 1px solid #f0f2f5;position: sticky;top: 0;z-index: 5;}
+.wrap.sticky  li a {font-size: 15px;font-weight: bold;color: #60656a;line-height: 43px;}
+.wrap.sticky  li:first-child a {color: #000;}
+.wrap.sticky  li:first-child a::after {content: '';height: 3px;display: block;background: #000;}
 
 /* banner */
 .banner {height: 206px;}
@@ -239,23 +241,24 @@ header,.container.early,.container.plan,.container.trend,.container.page.open {d
 .container {border-bottom: none;}
 .container.funding {padding: 24px 0 40px;}
 .container.funding .wrap {display: block;}
-.container .wrap .lnb {width: 100%;padding-right: 0;}
+.container.funding .wrap .lnb {width: 100%;padding-right: 0;}
 .container .wrap .text {font-size: 20px;}
-.container .wrap .lnb .l_con {margin-top: 10px;}
+.container.funding .wrap .lnb .l_con {margin-top: 10px;}
 .container .wrap .l_con li {width: 49%;}
-.container .wrap .l_con li .img {width: 100%;height: 194px;}
-.container .wrap .l_con li .txt_box p {width: 100%;}
-.container.funding .wrap .l_con .nature {display: none;}
-.container .wrap .nature.media {display: block;margin-top: 24px;}
-.container .wrap .nature.media .image {width: 100%;height: 90px;}
-.container .wrap .nature.media .txt_box.plan {margin-top: 8px;}
-.container .wrap .nature.media .txt_box.plan p {font-size: 14.5px;letter-spacing: -1px;}
-.container .wrap .lnb .but button {display: block;width: 100%;padding: 10px 18px;margin-top: 23px}
-.container .wrap .rnb {width: 100%;padding: 0;}
-.container .wrap .rnb::before {display: none;}
-.container .wrap .rnb .content_box {margin-top: 10px;}
-.container .wrap .rnb .content_box .r_con.l_con li + li {margin-top: 8px;}
-.container .wrap .rnb .content_box .r_con.l_con li .txt_box p {width: 100%;}
+.container.funding .wrap .lnb .l_con li .img {width: 100%;height: 194px;}
+.container.funding .wrap .l_con li .txt_box p {width: 100%;}
+.container.funding.funding .wrap .lnb .l_con .nature {display: none;}
+.container.funding .wrap .lnb .nature.media {display: block;margin-top: 24px;}
+.container.funding .wrap .lnb .nature.media .image {width: 100%;height: 90px;}
+.container.funding .wrap .lnb .nature.media .txt_box.plan {margin-top: 8px;}
+.container.funding .wrap .lnb .nature.media .txt_box.plan p {font-size: 14.5px;letter-spacing: -1px;}
+.container.funding .wrap .lnb .but button {display: block;width: 100%;padding: 10px 18px;margin-top: 23px}
+.container.funding .wrap .rnb {width: 100%;padding: 0;}
+.container.funding .wrap .rnb::before {display: none;}
+.container.funding .wrap .rnb .content_box {margin-top: 10px;}
+.container.funding .wrap .rnb .content_box .r_con.l_con li {width: 100%;}
+.container.funding .wrap .rnb .content_box .r_con.l_con li + li {margin-top: 8px;}
+.container.funding .wrap .rnb .content_box .r_con.l_con li .txt_box {width: 70%;}
 
 /* container con media */
 .container.con {display: none;}
@@ -267,8 +270,10 @@ header,.container.early,.container.plan,.container.trend,.container.page.open {d
 
 /* container project */
 .container.project {padding: 0;}
-.container.project .wrap .l_con li .img {width: 354px;height: 196px;}
-.container.project .wrap .l_con li .image {width: 718px;height: 90px;}
+.container.project .wrap .l_con li .img {width: 100%;height: 194px;}
+.container.project .wrap .l_con li .txt_box.word p {width: 100%;}
+.container.project .wrap .l_con .nature {width: 100%;}
+.container.project .wrap .l_con .nature .image {width: 100%;height: 90px;}
 
 /* container page */
 .container.page .wrap .ul {display: block;}
@@ -290,7 +295,7 @@ header,.container.early,.container.plan,.container.trend,.container.page.open {d
 
 /* container wadiz */
 .container.wadiz {padding: 40px 0 152px;}
-.container.wadiz .wrap {width: 750px;}
+.container.wadiz .wrap {width: 100%;padding: 0;}
 .container.wadiz .wrap .img {width: 100%;}
 .container.wadiz .wrap .img .open {padding-top: 92px;}
 .container.wadiz .wrap .img .open h1 {font-size: 28px;}
@@ -313,4 +318,8 @@ footer .wrap .ltd strong {display: inline-block;margin-top: 16px;}
 footer .wrap .app {display: flex;width: 100%;}
 footer .wrap .app a {width: 50%;}
 footer .wrap .app a:first-child {margin: 0;}
+
+footer .wrap.media.fixed {position: fixed;bottom: 0px;z-index: 10;background: #fff;padding: 0;}
+footer .wrap.media.fixed ul {display: flex;padding: 18px 0;}
+footer .wrap.media.fixed ul li {width: 100%;text-align: center;}
 }
