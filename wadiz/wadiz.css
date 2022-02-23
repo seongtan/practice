@@ -319,7 +319,7 @@ footer .wrap .app {display: flex;width: 100%;}
 footer .wrap .app a {width: 50%;}
 footer .wrap .app a:first-child {margin: 0;}
 
-footer .wrap.media.fixed {position: fixed;bottom: 0px;z-index: 10;background: #fff;padding: 0;}
+footer .wrap.media.fixed {position: fixed;bottom: 0px;background: #fff;padding: 0;}
 footer .wrap.media.fixed ul {display: flex;padding: 18px 0;}
 footer .wrap.media.fixed ul li {width: 100%;text-align: center;}
 }
