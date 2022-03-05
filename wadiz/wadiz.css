@@ -308,7 +308,7 @@ footer .container .wrap .terms {justify-content: space-between;}
 footer .container .wrap .question {flex-wrap: wrap;}
 footer .container .wrap ul li {width: 50%;line-height: 40px;margin: 0;}
 
-footer .wrap {display: block;padding: 24px 0 175px;}
+footer .wrap {display: block;padding: 24px 15px 175px;}
 footer .wrap .inquiry button {font-size: 14px;padding: 9px 20px;}
 footer .wrap .consulting {margin-top: 25px;}
 footer .wrap .ltd {width: 100%;}
