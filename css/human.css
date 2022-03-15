@@ -12,7 +12,7 @@ header .wrap .menu li {position: relative;font-size: 16px;margin-right: 40px;}
 header .wrap .menu li:nth-child(5) {margin-right: 65px;}
 header .wrap .menu .language {margin-right: 20px;}
 header .wrap .menu li a {color: #222222;}
-header .wrap .menu .menu_box {top: 30px;left: -15px;display: none;width: 185px;background-color: #7f7f7f;position: absolute;z-index: 10;}
+header .wrap .menu .menu_box {left: -15px;display: none;width: 185px;background-color: #7f7f7f;position: absolute;z-index: 10;}
 header .wrap .menu .menu_box li {margin: 15px;line-height: 35px;}
 header .wrap .menu .menu_box li a {color: #fff;}
 header .wrap .menu li:hover .menu_box {display: block;}
