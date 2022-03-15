@@ -4,12 +4,7 @@ a {text-decoration: none;}
 
 body {margin: 0;padding: 0;}
 
-.menu {position: fixed;top: 0;bottom: 0;padding: 15px;display: flex;flex-direction: column;justify-content: space-around;}
+.menu {position: fixed;top: 0;bottom: 0;padding: 25px;display: flex;flex-direction: column;justify-content: space-around;}
 .menu ul {display: flex;flex-direction: column;justify-content: space-evenly;height: 300px;}
-.menu ul li a {display: flex;padding: 17px;border-radius: 30px;background: #ededed;color: #555761;cursor: pointer;}
-.menu ul li:first-child a {background: #555761;color: #ededed;}
-.menu ul li a:hover {background: #555761;color: #ededed;}
-
-.home {height: 100vh;margin-left: 160px;display: flex;flex-direction: column;justify-content: center;color: #45505b;}
-.home h1 {font-size: 64px;margin-left: -4px;}
-.home p {font-size: 26px;letter-spacing: 1px;line-height: 40px;}
+.menu ul li a {display: inline-flex;align-items: flex-end;cursor: pointer;}
+.menu ul li a strong {font-size: 15px;margin-left: 10px;}
