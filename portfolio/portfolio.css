@@ -4,7 +4,10 @@ a {text-decoration: none;}
 
 body {margin: 0;padding: 0;}
 
-.menu {position: fixed;top: 0;bottom: 0;padding: 25px;display: flex;flex-direction: column;justify-content: space-around;}
-.menu ul {display: flex;flex-direction: column;justify-content: space-evenly;height: 300px;}
-.menu ul li a {display: inline-flex;align-items: flex-end;cursor: pointer;}
-.menu ul li a strong {font-size: 15px;margin-left: 10px;}
+header {position: fixed;top: 0;bottom: 0;padding: 25px;display: flex;flex-direction: column;justify-content: space-around;}
+header .menu {display: flex;flex-direction: column;justify-content: space-evenly;height: 300px;}
+header .menu li a {display: inline-flex;align-items: center;color: #000;}
+header .menu li a strong {font-size: 15px;margin-left: 10px;position: relative;}
+header .menu li:first-child a strong::before {width: 100%;}
+header .menu li a strong::before {content: '';height: 2px;width: 0;background: #000;transition: 0.5s;position: absolute;bottom: 0;}
+header .menu li a:hover strong::before {width: 100%;}
