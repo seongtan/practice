@@ -23,13 +23,15 @@ header .menu li a:hover strong::before {width: 100%;}
 .about .me {text-align: center;}
 .about .me h2 {font-size: 35px;}
 .about .me p {font-size: 20px;margin-top: 15px;}
+.about .me p span {color: #607d8b;}
 .about ul {margin-top: 80px;display: flex;flex-direction: column;flex-wrap: wrap;align-content: center;}
 .about ul li {line-height: 65px;}
 
-.skills {width: 1300px;margin: 0 auto;padding: 120px;box-sizing: border-box;}
+.skills {width: 1300px;margin: 0px 335px;padding: 150px 120px;box-sizing: border-box;}
 .skills h2 {font-size: 45px;}
-.skills ul {margin-top: 100px;}
+.skills ul {margin-top: 170px;display: flex;justify-content: space-between;}
 .skills ul li:hover {border: 1px solid;border-radius: 15px;padding: 20px;cursor: pointer;}
-.skills ul li strong {font-size: 28px;}
+.skills ul li strong {font-size: 28px;box-shadow: 1px 1px 2px 2px;padding: 0 3px;}
+.skills ul li:hover strong {box-shadow: none;padding: 0;}
 .skills ul li p {line-height: 28px;margin-top: 18px;display: none;}
 .skills ul li:hover p {display: block;}
