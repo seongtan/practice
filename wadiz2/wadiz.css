@@ -4,18 +4,41 @@ a {text-decoration: none;}
 
 body {margin: 0;padding: 0;}
 
+
+/* Pattern Layout*/
+.flex_between {display:flex;justify-content:space-between}
+
+/* Pattern Button Size */
+.btnSizeS {}
+.btnSizeM {padding:7px 15px;border:1px solid;font-size:15px;border-radius:3px;cursor:pointer}
+.btnSizeL {}
+
+/* Pattern Button Color */
+[class*="btnSize"] {display:inline-block;text-align:center;box-sizing:border-box}
+[class*="btnSize"].color_primary {color:#fff;border-color:#00c4c4;background:#00c4c4}
+[class*="btnSize"].color_primary:hover {border-color:#00b2b2;background:#00b2b2}
+[class*="btnSize"].color_primary.reverse {color:#00c4c4;border-color:#00c4c4;background:#fff}
+[class*="btnSize"].color_primary.reverse:hover {color:#fff;border-color:#00c4c4;background:#00c4c4}
+
+
+
 /* header */
 .wrap {width: 1280px;margin: 0 auto;}
 .wrap.media, .sticky {display: none;}
+.logo {font-size: 30px;font-weight: bold;color: #000;}
+
 header .wrap {display: flex;justify-content: space-between;padding: 8px 0;}
-header .wrap .l_nav {display: flex;align-items: center;}
-.wrap .logo {font-size: 30px;font-weight: bold;color: #000;}
-header .wrap .l_nav .menu {display: inline-flex;margin-left: 40px;}
-header .wrap .l_nav .menu li a {font-size: 20px;font-weight: bold;color: #000;letter-spacing: -2px;margin-right: 30px;}
-header .wrap .l_nav .menu li a:hover {color: rgba(33,37,41,.86);}
-header .wrap .r_nav input {border: 1px solid #00c4c4;border-radius: 20px;outline: none;padding: 11px 40px;font-size: 13.5px;width: 196px;margin-right: 10px;}
-header .wrap .r_nav a {color: #60656a;font-size: 14px;margin: 0 5px;}
-.wrap .button {border: 1px solid #00c4c4;border-radius: 3px;color: #00c4c4;background: #fff;font-size: 15px;padding: 7px 15px;margin-left: 10px;cursor: pointer;}
+header .wrap .navigation {display: flex;align-items: center;}
+header .wrap .navigation .menu {display: inline-flex;margin-left: 40px;}
+header .wrap .navigation .menu li a {font-size: 20px;font-weight: bold;color: #000;letter-spacing: -2px;margin-right: 30px;}
+header .wrap .navigation .menu li a:hover {color: rgba(33,37,41,.86);}
+header .wrap .utils .utils_search {border: 1px solid #00c4c4;border-radius: 20px;outline: none;padding: 11px 40px;font-size: 13.5px;width: 196px;margin-right: 10px;}
+header .wrap .utils .link {color: #60656a;font-size: 14px;margin: 0 5px;}
+
+
+
+
+.wrap .button {border: 1px solid #00c4c4;border-radius: 3px;color: #00c4c4;background: #fff;}
 .wrap .button:hover {color: #fff;background-color: #00c4c4;}
 
 /* banner */
