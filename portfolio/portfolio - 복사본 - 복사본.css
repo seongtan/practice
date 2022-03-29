@@ -29,7 +29,7 @@ header .menu li a:hover strong::before {width: 100%;}
 .con h1 {font-family: 'vitro';font-size: 50px;color: #fff;text-align: center;}
 
 .home {display: flex;flex-direction: column;align-items: center;justify-content: center;}
-.home .text-line text {stroke-dasharray: 500;stroke-dashoffset: 500;animation: dash 5s linear forwards, filling 4s ease-in forwards;}
+.home .text_line text {stroke-dasharray: 500;stroke-dashoffset: 500;animation: dash 5s linear forwards, filling 4s ease-in forwards;}
 @keyframes dash {
     to {
     stroke-dashoffset: 0;
@@ -56,14 +56,16 @@ header .menu li a:hover strong::before {width: 100%;}
 .about ul li span {position: relative;}
 .about ul li span::before {content: '';border-left: 2px solid #fff;position: absolute;top: 2px;bottom: 0px;left: -30px;}
 
-/* .skills ul {display: flex;justify-content: space-around;border: 1px solid;border-radius: 50px;box-shadow: 0px 1px 5px 2px;padding: 25px;margin-top: 70px;}
-.skills ul li {color: #fff;} */
-.skills ul li strong {font-size: 25px;}
-.skills ul li p {line-height: 28px;margin-top: 18px;display: none;}
-
-.skills ul {display: flex;justify-content: center;width: 800px;background: #222128;border-radius: 50px;box-shadow: 0px 1px 5px 2px;padding: 10px 15px;margin: 70px auto 0;}
-.skills ul li {color: #fff;padding: 10px 50px;border-radius: 30px;}
-.skills ul li:first-child {background: #494a50;}
+.skills .container {width: 800px;height: 350px;background: #222128;border-radius: 15px;padding: 0.75rem;margin: 50px auto 0;position: relative;}
+.skills .container::after {content: '';position: absolute;border-bottom: 2px solid #2f3336;width: 800px;top: 79px;}
+.skills .container .tabs {display: flex;color: #494a50;}
+.skills .container .tabs .tab {display: flex;align-items: center;justify-content: center;height: 54px;width: 200px;font-family: 'score';font-weight: bold;font-size: 23px;cursor: pointer;}
+.skills .container .tabs .glider {position: absolute;height: 54px;width: 200px;background: #494a50;border-radius: 10px;transition: 0.30s ease-out;}
+input[type="radio"] {display: none;}
+input[type="radio"]:checked + label {color: #fff;z-index: 2;}
+input[id="radio-2"]:checked ~ .glider {transform: translateX(100%);}
+input[id="radio-3"]:checked ~ .glider {transform: translateX(200%);}
+input[id="radio-4"]:checked ~ .glider {transform: translateX(300%);}
 
 .portfolio .explanation {display: flex;justify-content: space-between;margin-top: 50px;}
 .portfolio .explanation p {line-height: 30px;padding: 50px 0;}
