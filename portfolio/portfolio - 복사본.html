@@ -7,6 +7,10 @@
     <title>포트폴리오</title>
     <!-- CSS 연결 -->
     <link href="portfolio - 복사본.css" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
 </head>
 
 <body>
@@ -132,23 +136,30 @@
         </div>
     
         <div class="con portfolio">
-            <h1>PORTFOLIO</h1>
-            <div class="explanation">
-                <p>dsjflsdkajhfgiowrjglksdjfjksdhflafdlkjflkjd <br>
-                    lsdkfjksladjaf;laskdjgkljdslkfjsdlfkdfjksldjfs <br>
-                    sdklfjdl;glskdjgirjlekrfoejfijsfidjlkdsjflkjad <br>
-                    jksdhfksjadflaiejlfjksdjdlkfjeiojfkjsfd <br>
-                    sdlkfjsaditgjjkrhgliejr
-                </p>
-                <div class="img"></div>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">Slide 1</div>
+                    <div class="swiper-slide">Slide 2</div>
+                    <div class="swiper-slide">Slide 3</div>
+                    <div class="swiper-slide">Slide 4</div>
+                    <div class="swiper-slide">Slide 5</div>
+                </div>
+                <div class="swiper-pagination"></div>
             </div>
-            <div class="btn">
-                <button type="button"></button>
-                <button type="button"></button>
-                <button type="button"></button>
-                <button type="button"></button>
-                <button type="button"></button>
-            </div>
+
+            <!-- Swiper JS -->
+            <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+            <!-- Initialize Swiper -->
+            <script>
+                var swiper = new Swiper(".mySwiper", {
+                spaceBetween: 30,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                });
+            </script>
         </div>
     </div>
 </body>

@@ -286,6 +286,7 @@ header,.container.early,.container.plan,.container.trend,.container.page.open {d
 .container.friend .wrap .text {display: none;}
 .container.friend .wrap .text.txt {display: block;}
 .container.friend .wrap .img {width: 100%;height: 478px;}
+.container.friend .wrap .img .follow p {white-space: nowrap;}
 
 /* container news */
 .container.news .wrap {display: block;height: 100%;}
