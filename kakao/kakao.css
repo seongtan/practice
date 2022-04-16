@@ -21,7 +21,7 @@ header .top .top_right button:hover {background: #dddddd7d;}
 .line .top.bottom .bottom_right a:hover,
 .line .top.bottom .bottom_right strong:hover {text-decoration: underline;}
 
-.wrap .inner_cont {height: 565px;}
+.wrap .inner_cont {height: 865px;}
 .wrap .inner_cont p {text-align: center;font-size: 30px;font-weight: bold;letter-spacing: -2px;line-height: 1.5;position: absolute;top: 55%;left: 50%;transform: translate(-50%);white-space: nowrap;}
 
 .wrap .group_desc {width: 816px;text-align: center;margin: 0 auto;position: relative;}

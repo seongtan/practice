@@ -6,7 +6,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>jQuery AppLikeOnePage.js Plugin Demo</title>
-		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/demo.css" />
 
 	<script src="http://code.jquery.com/jquery-1.12.3.min.js"></script>
 	<script src="js/onepage.js"></script>
@@ -17,7 +18,7 @@
 				container: "#frame",
 				sections: ".op-section",
 				radio: "#radio",
-				radioOn: "#radioOn",
+				// radioOn: "#radioOn",
 				speed: 500,
 				easing: "swing"
 			});
@@ -27,43 +28,54 @@
 
 <body>
 	<header>
-        <ul class="menu">
-            <li>
-                <a href="#">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
-                        <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
-                    </svg>
-                    <strong>Home</strong>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
-                        <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
-                    </svg>
-                    <strong>About</strong>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="currentColor" class="bi bi-palette" viewBox="0 0 16 16">
-                        <path d="M8 5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm4 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM5.5 7a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm.5 6a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
-                        <path d="M16 8c0 3.15-1.866 2.585-3.567 2.07C11.42 9.763 10.465 9.473 10 10c-.603.683-.475 1.819-.351 2.92C9.826 14.495 9.996 16 8 16a8 8 0 1 1 8-8zm-8 7c.611 0 .654-.171.655-.176.078-.146.124-.464.07-1.119-.014-.168-.037-.37-.061-.591-.052-.464-.112-1.005-.118-1.462-.01-.707.083-1.61.704-2.314.369-.417.845-.578 1.272-.618.404-.038.812.026 1.16.104.343.077.702.186 1.025.284l.028.008c.346.105.658.199.953.266.653.148.904.083.991.024C14.717 9.38 15 9.161 15 8a7 7 0 1 0-7 7z"/>
-                    </svg>
-                    <strong>Skills</strong>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="currentColor" class="bi bi-file-earmark-text" viewBox="0 0 16 16">
-                        <path d="M5.5 7a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5z"/>
-                        <path d="M9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.5L9.5 0zm0 1v2A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z"/>
-                    </svg>
-                    <strong>Portfolio</strong>
-                </a>
-            </li>
-        </ul>
+		<div id="radioWrap">
+			<ul id="radio" class="menu">
+				<li>
+					<a href="#">
+						<svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+							<path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+							<path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+						</svg>
+						<input type="radio" id="btn" name="button" checked>
+						<label for="btn">Home</label>
+						<!-- <strong>Home</strong> -->
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+							<path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+						</svg>
+						<input type="radio" id="btn01" name="button">
+						<label for="btn01">About</label>
+						<!-- <strong>About</strong> -->
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="currentColor" class="bi bi-palette" viewBox="0 0 16 16">
+							<path d="M8 5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm4 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM5.5 7a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm.5 6a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+							<path d="M16 8c0 3.15-1.866 2.585-3.567 2.07C11.42 9.763 10.465 9.473 10 10c-.603.683-.475 1.819-.351 2.92C9.826 14.495 9.996 16 8 16a8 8 0 1 1 8-8zm-8 7c.611 0 .654-.171.655-.176.078-.146.124-.464.07-1.119-.014-.168-.037-.37-.061-.591-.052-.464-.112-1.005-.118-1.462-.01-.707.083-1.61.704-2.314.369-.417.845-.578 1.272-.618.404-.038.812.026 1.16.104.343.077.702.186 1.025.284l.028.008c.346.105.658.199.953.266.653.148.904.083.991.024C14.717 9.38 15 9.161 15 8a7 7 0 1 0-7 7z"/>
+						</svg>
+						<input type="radio" id="btn02" name="button">
+						<label for="btn02">Skills</label>
+						<!-- <strong>Skills</strong> -->
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="currentColor" class="bi bi-file-earmark-text" viewBox="0 0 16 16">
+							<path d="M5.5 7a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5z"/>
+							<path d="M9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.5L9.5 0zm0 1v2A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z"/>
+						</svg>
+						<input type="radio" id="btn03" name="button">
+						<label for="btn03">Portfolio</label>
+						<!-- <strong>Portfolio</strong> -->
+					</a>
+				</li>
+			</ul>
+			<!-- <span id="radioOn"></span>  -->
+		</div>
     </header>
 
 	<div id="view">
@@ -146,23 +158,197 @@
 					</div>
 				</div>
 			</div>
-			<div class="op-section fourth">section3</div>
+
+			<div class="op-section fourth">
+				<div class="con portfolio">
+					<h1>PORTFOLIO</h1>
+					<div class="swiper mySwiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<!-- <div class="img human"></div> -->
+								<div class="img">
+									<div class="image human">
+										<div class="explanation">
+											<p>
+												휴먼스케이프 설명 휴먼스케이프 설명 휴먼스케이프 설명 <br>
+												휴먼스케이프 설명 휴먼스케이프 설명 휴먼스케이프 설명 <br>
+												휴먼스케이프 설명 휴먼스케이프 설명 휴먼스케이프 설명 <br>
+												휴먼스케이프 설명 휴먼스케이프 설명 휴먼스케이프 설명 <br>
+											</p>
+											<a href="../../Human_KR/humanscape.html" target="_blank">View more</a>
+										</div>
+									</div>
+									<div class="swiper-pagination"></div>
+								</div>
+								<div class="kinds">
+									<strong># 휴먼스케이프 홈페이지</strong>
+									<ul>
+										<li>
+											<span>Viewport</span>
+											<span>PC</span>
+										</li>
+										<li>
+											<span>Skills</span>
+											<span>html, css</span>
+										</li>
+										<li>
+											<span>Work</span>
+											<span>퍼블리싱 100%</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<!-- <div class="img doob"></div> -->
+								<div class="img">
+									<div class="image doob">
+										<div class="explanation">
+											<p>
+												doob 설명 doob 설명 doob 설명 doob 설명 doob 설명 <br>
+												doob 설명 doob 설명 doob 설명 doob 설명 doob 설명 <br>
+												doob 설명 doob 설명 doob 설명 doob 설명 doob 설명 <br>
+												doob 설명 doob 설명 doob 설명 doob 설명 doob 설명 <br>
+											</p>
+											<a href="../../Doob/doob.html" target="_blank">View more</a>
+										</div>
+									</div>
+									<div class="swiper-pagination"></div>
+								</div>
+								<div class="kinds">
+									<strong># doob 홈페이지</strong>
+									<ul>
+										<li>
+											<span>Viewport</span>
+											<span>PC</span>
+										</li>
+										<li>
+											<span>Skills</span>
+											<span>html, css</span>
+										</li>
+										<li>
+											<span>Work</span>
+											<span>퍼블리싱 100%</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<!-- <div class="img doob"></div> -->
+								<div class="img">
+									<div class="image doob">
+										<div class="explanation">
+											<p>
+												doob 설명 doob 설명 doob 설명 doob 설명 doob 설명 <br>
+												doob 설명 doob 설명 doob 설명 doob 설명 doob 설명 <br>
+												doob 설명 doob 설명 doob 설명 doob 설명 doob 설명 <br>
+												doob 설명 doob 설명 doob 설명 doob 설명 doob 설명 <br>
+											</p>
+											<a href="../../Doob/doob.html" target="_blank">View more</a>
+										</div>
+									</div>
+									<div class="swiper-pagination"></div>
+								</div>
+								<div class="kinds">
+									<strong># doob 홈페이지</strong>
+									<ul>
+										<li>
+											<span>Viewport</span>
+											<span>PC</span>
+										</li>
+										<li>
+											<span>Skills</span>
+											<span>html, css</span>
+										</li>
+										<li>
+											<span>Work</span>
+											<span>퍼블리싱 100%</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<!-- <div class="img doob"></div> -->
+								<div class="img">
+									<div class="image doob">
+										<div class="explanation">
+											<p>
+												doob 설명 doob 설명 doob 설명 doob 설명 doob 설명 <br>
+												doob 설명 doob 설명 doob 설명 doob 설명 doob 설명 <br>
+												doob 설명 doob 설명 doob 설명 doob 설명 doob 설명 <br>
+												doob 설명 doob 설명 doob 설명 doob 설명 doob 설명 <br>
+											</p>
+											<a href="../../Doob/doob.html" target="_blank">View more</a>
+										</div>
+									</div>
+									<div class="swiper-pagination"></div>
+								</div>
+								<div class="kinds">
+									<strong># doob 홈페이지</strong>
+									<ul>
+										<li>
+											<span>Viewport</span>
+											<span>PC</span>
+										</li>
+										<li>
+											<span>Skills</span>
+											<span>html, css</span>
+										</li>
+										<li>
+											<span>Work</span>
+											<span>퍼블리싱 100%</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<!-- <div class="img doob"></div> -->
+								<div class="img">
+									<div class="image doob">
+										<div class="explanation">
+											<p>
+												doob 설명 doob 설명 doob 설명 doob 설명 doob 설명 <br>
+												doob 설명 doob 설명 doob 설명 doob 설명 doob 설명 <br>
+												doob 설명 doob 설명 doob 설명 doob 설명 doob 설명 <br>
+												doob 설명 doob 설명 doob 설명 doob 설명 doob 설명 <br>
+											</p>
+											<a href="../../Doob/doob.html" target="_blank">View more</a>
+										</div>
+									</div>
+									<div class="swiper-pagination"></div>
+								</div>
+								<div class="kinds">
+									<strong># doob 홈페이지</strong>
+									<ul>
+										<li>
+											<span>Viewport</span>
+											<span>PC</span>
+										</li>
+										<li>
+											<span>Skills</span>
+											<span>html, css</span>
+										</li>
+										<li>
+											<span>Work</span>
+											<span>퍼블리싱 100%</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-button-next"></div>
+						<div class="swiper-button-prev"></div>
+						<!-- <div class="swiper-pagination"></div> -->
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 
-	<!-- <div id="radioWrap">
-		<ul id="radio">
-			<li>section0</li>
-			<li>section1</li>
-			<li>section2</li>
-			<li>section3</li>
-			<li>section4</li>
-			<li>section5</li>
-		</ul>
-		<span id="radioOn"></span> 
-	</div> -->
+
 
 		<script src="js/ScrollTrigger.min.js"></script>
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
 		<script>
 		window.counter = function() {
 			// this refers to the html element with the data-scroll-showCallback tag
@@ -172,11 +358,37 @@
 			span.textContent = current + 1;
 		};
 
-		document.addEventListener('DOMContentLoaded', function(){
-			var trigger = new ScrollTrigger({
-			addHeight: true
+		// document.addEventListener('DOMContentLoaded', function(){
+		// 	var trigger = new ScrollTrigger({
+		// 	addHeight: a
+		// 	});
+		// });
+
+		var swiper = new Swiper(".mySwiper", {
+			direction: "vertical",
+			slidesPerView: 1,
+			spaceBetween: 30,
+			mousewheel: true,
+			pagination: {
+				el: ".swiper-pagination",
+				clickable: true,
+			},
+			navigation: {
+				nextEl: ".swiper-button-next",
+				prevEl: ".swiper-button-prev",
+			},
+		});
+		
+		// 포트폴리오에 마우스 오버 시 부모 스크롤 제어
+		$('.portfolio').mouseover(function() {
+			$('body').bind('mousewheel DOMMouseScroll', function() {
+				return true;
+			});
+			$(this).bind('mousewheel DOMMouseScroll', function() {
+				return false;
 			});
 		});
+
 		</script>
 </body>
 </html>

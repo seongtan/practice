@@ -73,10 +73,34 @@ input[id="radio_4"]:checked ~ .glider {transform: translateX(300%);}
 .skills .container .tabs #radio_3:checked ~ .txt_box #radio_3_txt,
 .skills .container .tabs #radio_4:checked ~ .txt_box #radio_4_txt {display: block;}
 
-.portfolio .explanation {display: flex;justify-content: space-between;margin-top: 50px;}
-.portfolio .explanation p {line-height: 30px;padding: 50px 0;}
-.portfolio .explanation .img::after {content: '';display: block;width: 580px;height: 430px;background: #ddd;}
-.portfolio .btn {margin-top: 100px;display: flex;justify-content: center;}
-.portfolio .btn button {width: 18px;height: 18px;border: none;border-radius: 10px;background: #ddd;cursor: pointer;}
-.portfolio .btn button:first-child {background-color: #9e9e9e;}
-.portfolio .btn button + button {margin-left: 15px;}
+.portfolio h1 {text-align: left;}
+.portfolio .swiper.mySwiper .swiper-wrapper .swiper-slide .img {position:relative;width:650px;height:541px}
+/* .portfolio .swiper.mySwiper .swiper-wrapper .swiper-slide .img::before {content: '';display: block;width:100%;height:100%;background:url(./img/test2.png) 100%;}
+.portfolio .swiper.mySwiper .swiper-wrapper .swiper-slide .img::after {content: '';position:absolute;top:28px;left:28px;display: block;width:595px;height:334px;cursor: zoom-in;} 
+.portfolio .swiper.mySwiper .swiper-wrapper .swiper-slide .img.human::after {background:url(./img/human.png) 100%;}
+.portfolio .swiper.mySwiper .swiper-wrapper .swiper-slide .img.doob::after {background:url(./img/doob.png) 100%;} */
+.portfolio .swiper.mySwiper .swiper-wrapper .swiper-slide .img {background-image: url(./img/test2.png);}
+.portfolio .swiper.mySwiper .swiper-wrapper .swiper-slide .image {width:595px;height:334px;position: absolute;top: 28px;left: 28px;}
+.portfolio .swiper.mySwiper .swiper-wrapper .swiper-slide .img .image.human {background-image: url(./img/human.png);}
+.portfolio .swiper.mySwiper .swiper-wrapper .swiper-slide .img .image.doob {background-image: url(./img/doob.png);}
+.portfolio .swiper.mySwiper .swiper-wrapper .swiper-slide .img .image .explanation  {height: 334px;background: #fff;opacity: 0;display: flex;flex-direction: column;justify-content: center;align-items: center;font-family: 's_core';transition: all 0.8s;cursor: url(./img/mouse02.png), auto;}
+.portfolio .swiper.mySwiper .swiper-wrapper .swiper-slide .img .image .explanation a {font-size: 14px;color: #fff;background: #222128;border-radius: 5px;padding: 10px 20px;margin-top: 20px;}
+.portfolio .swiper.mySwiper .swiper-wrapper .swiper-slide .img .image .explanation a:hover {background: #494a50;}
+.portfolio .swiper.mySwiper .swiper-wrapper .swiper-slide .img .image:hover .explanation {opacity: .9;}
+
+.portfolio .swiper.mySwiper .swiper-wrapper .swiper-slide .kinds {color: #fff;width: 360px;height: 541px;display: inline-grid;justify-content: end;align-content: center;gap: 40px;}
+.portfolio .swiper.mySwiper .swiper-wrapper .swiper-slide .kinds strong {font-size: 25px;font-family: 'score';}
+.portfolio .swiper.mySwiper .swiper-wrapper .swiper-slide .kinds ul {height: 400px;}
+.portfolio .swiper.mySwiper .swiper-wrapper .swiper-slide .kinds ul li {line-height: 55px;font-size: 19px;font-family: 'score';}
+.portfolio .swiper.mySwiper .swiper-wrapper .swiper-slide .kinds ul li span:first-child {display: inline-block;width: 130px;}
+
+.portfolio .swiper.mySwiper .swiper-wrapper .swiper-slide .kinds .swiper-pagination {right: 250px;top: 74%;}
+/* .portfolio .swiper.mySwiper .swiper-wrapper .swiper-slide .kinds .swiper-pagination::after {content: '';background-image: url(./img/scroll.png);display: block;width: 94px;height: 100px;position: absolute;top: 20px;left: 30px;} */
+.portfolio .swiper.mySwiper .swiper-wrapper .swiper-slide .kinds .swiper-pagination .swiper-pagination-bullet {width: 20px;height: 20px;opacity: var(--swiper-pagination-bullet-inactive-opacity, .5);}
+.portfolio .swiper.mySwiper .swiper-wrapper .swiper-slide .kinds .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {opacity: var(--swiper-pagination-bullet-inactive-opacity, 1);}
+.portfolio .swiper.mySwiper .swiper-wrapper .swiper-slide .kinds .swiper-pagination .swiper-pagination-bullet-active {background: #fff;}
+
+.swiper {width: 100%;height: 100%;margin-top: 20px;cursor: url(./img/mouse.png),auto;}
+.swiper-slide {display: -webkit-box;display: -ms-flexbox;display: -webkit-flex;display: flex;}
+.swiper-slide img {display: block;width: 100%;height: 100%;object-fit: cover;}
+

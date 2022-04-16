@@ -1,7 +1,8 @@
- * {
-	margin: 0;
-	padding: 0;
-}
+ul, li {margin: 0;padding: 0;list-style: none;}
+h1, h2, h3, h4, h5, h6, p {margin: 0;padding: 0;}
+a {text-decoration: none;}
+
+body {margin: 0;padding: 0;overflow-y: hidden;background: #2f3336;}
 
 /*
 	set overflow-y property to prevent scroll bar mess up the whole layout
@@ -9,7 +10,7 @@
 
 @font-face {
     font-family: 'vitro';
-    src: url(../VITRO_Font_TTF/비트로\ 코어\ TTF.ttf);
+	src: url(../VITRO_Font_TTF/비트로\ 코어\ TTF.ttf);
 }
 @font-face {
     font-family: 'score';
@@ -21,17 +22,21 @@
 }
 
 header {position: fixed;top: 0;bottom: 0;padding: 25px;display: flex;flex-direction: column;justify-content: space-around;}
-header .menu {display: flex;flex-direction: column;justify-content: space-evenly;height: 300px;}
+header .menu {display: flex;flex-direction: column;justify-content: space-evenly;width: 100%;height: 100%;overflow: hidden;}
 header .menu li a {display: inline-flex;align-items: flex-end;color: #fff;}
-header .menu li a strong {margin-left: 10px;position: relative;}
-header .menu li:first-child a strong::before {width: 100%;}
-header .menu li a strong::before {content: '';height: 2px;width: 0;background: #fff;transition: 0.5s;position: absolute;bottom: 0;}
-header .menu li a:hover strong::before {width: 100%;}
+header .menu li a label {font-weight: bold;position: relative;margin-left: 10px;cursor: pointer;}
+/* header .menu li:first-child a strong::before {width: 100%;} */
+header .menu li a label::before {content: '';height: 2px;width: 0;background: #fff;transition: 0.5s;position: absolute;bottom: 0;}
+header .menu li a:hover label::before {width: 100%;}
 
-.con {height: 100vh;width: 1250px;margin: 0 auto;padding: 150px 120px;box-sizing: border-box;}
+[id^=btn]:checked ~ [for*=btn]::before,
+[id^=btn]:checked ~ [for*=btn]::before,
+[id^=btn]:checked ~ [for*=btn]::before {width: 100%;}
+
+.con {height: 100vh;width: 1250px;margin: 0 auto;padding: 150px 120px;box-sizing: border-box;display: flex;flex-direction: column;justify-content: center;}
 .con h1 {font-family: 'vitro';font-size: 50px;color: #fff;text-align: center;}
 
-.home {display: flex;flex-direction: column;align-items: center;justify-content: center;}
+.home {align-items: center;}
 .home .text_line text {stroke-dasharray: 500;stroke-dashoffset: 500;animation: dash 5s linear forwards, filling 4s ease-in forwards;}
 @keyframes dash {
     to {
@@ -58,7 +63,6 @@ header .menu li a:hover strong::before {width: 100%;}
 .about ul li span {position: relative;}
 .about ul li span::before {content: '';border-left: 2px solid #fff;position: absolute;top: 2px;bottom: 0px;left: -30px;}
 
-.skills {padding: 105px 120px;}
 .skills .container {width: 800px;height: 350px;background: #222128;border-radius: 15px;padding: 0.75rem;margin: 50px auto 0;position: relative;}
 .skills .container::after {content: '';position: absolute;border-bottom: 2px solid #2f3336;width: 800px;top: 79px;}
 .skills .container .tabs {display: flex;color: #494a50;}
@@ -76,47 +80,55 @@ input[id="radio_4"]:checked ~ .glider {transform: translateX(300%);}
 .skills .container .tabs #radio_3:checked ~ .txt_box #radio_3_txt,
 .skills .container .tabs #radio_4:checked ~ .txt_box #radio_4_txt {display: block;}
 
-body {
-	margin: 0;
-	padding: 0;
-	overflow-y: hidden;
-	background: #2f3336;
-}
+.portfolio h1 {text-align: left;}
+/* .portfolio .swiper.mySwiper .swiper-wrapper .swiper-slide .img {position:relative;width:650px;height:541px} */
+/* .portfolio .swiper.mySwiper .swiper-wrapper .swiper-slide .img::before {content: '';display: block;width:100%;height:100%;background:url(./img/test2.png) 100%;}
+.portfolio .swiper.mySwiper .swiper-wrapper .swiper-slide .img::after {content: '';position:absolute;top:28px;left:28px;display: block;width:595px;height:334px;cursor: zoom-in;} 
+.portfolio .swiper.mySwiper .swiper-wrapper .swiper-slide .img.human::after {background:url(./img/human.png) 100%;}
+.portfolio .swiper.mySwiper .swiper-wrapper .swiper-slide .img.doob::after {background:url(./img/doob.png) 100%;} */
+.portfolio .swiper.mySwiper .swiper-wrapper .swiper-slide .img {background-image: url(../../img/test2.png);position:relative;width:650px;height:541px}
+.portfolio .swiper.mySwiper .swiper-wrapper .swiper-slide .img .image {width:595px;height:334px;position: absolute;top: 28px;left: 28px;}
+.portfolio .swiper.mySwiper .swiper-wrapper .swiper-slide .img .image.human {background-image: url(../../img/human.png);}
+.portfolio .swiper.mySwiper .swiper-wrapper .swiper-slide .img .image.doob {background-image: url(../../img/doob.png);}
+.portfolio .swiper.mySwiper .swiper-wrapper .swiper-slide .img .image .explanation  {height: 334px;background: #fff;opacity: 0;display: flex;flex-direction: column;justify-content: center;align-items: center;font-family: 's_core';transition: all 0.8s;cursor: url(../../img/mouse02.png), auto;}
+.portfolio .swiper.mySwiper .swiper-wrapper .swiper-slide .img .image .explanation a {font-size: 14px;color: #fff;background: #222128;border-radius: 5px;padding: 10px 20px;margin-top: 20px;}
+.portfolio .swiper.mySwiper .swiper-wrapper .swiper-slide .img .image .explanation a:hover {background: #494a50;}
+.portfolio .swiper.mySwiper .swiper-wrapper .swiper-slide .img .image:hover .explanation {opacity: .9;}
+.portfolio .swiper.mySwiper .swiper-wrapper .swiper-slide .swiper-pagination {top: auto;bottom: 45px;right: auto;left: 10px;transform: none;}
+.portfolio .swiper.mySwiper .swiper-wrapper .swiper-slide .swiper-pagination .swiper-pagination-bullet {display: inline-block;width: 20px;height: 20px;margin: 0 var(--swiper-pagination-bullet-horizontal-gap,4px);opacity: var(--swiper-pagination-bullet-inactive-opacity, .5);}
+.portfolio .swiper.mySwiper .swiper-wrapper .swiper-slide .swiper-pagination .swiper-pagination-bullet-active {background: #fff;}
 
-li {
-	list-style-type: none;
-}
+.portfolio .swiper.mySwiper .swiper-wrapper .swiper-slide .kinds {color: #fff;width: 360px;height: 450px;display: inline-grid;align-content: center;gap: 40px;margin-left: 60px;}
+.portfolio .swiper.mySwiper .swiper-wrapper .swiper-slide .kinds strong {font-size: 25px;font-family: 'score';}
+.portfolio .swiper.mySwiper .swiper-wrapper .swiper-slide .kinds ul li {line-height: 55px;font-size: 19px;font-family: 'score';}
+.portfolio .swiper.mySwiper .swiper-wrapper .swiper-slide .kinds ul li span:first-child {display: inline-block;width: 130px;}
+
+.portfolio .swiper.mySwiper .swiper-button-next {right: 320px;left: auto;top: auto;bottom: 105px;transform: rotate(90deg);color: #fff;}
+.portfolio .swiper.mySwiper .swiper-button-prev {right: 320px;left: auto;transform: rotate(90deg);color: #fff;top: 30px;}
+
+.swiper {margin-top: 20px;cursor: url(../../img/mouse.png) 15 26,auto;}
+.swiper-slide {display: -webkit-box;}
+.swiper-slide img {display: block;width: 100%;height: 100%;object-fit: cover;}
+
 
 #radioWrap {
-	width: 20px;
-	height: 180px;
-	position: absolute;
-	right: 5%;
-	top: 50%;
-	margin-top: -90px;
+	height: 300px;
 }
 
 #radio {
-	width: 100%;
+	/* width: 100%;
 	height: 100%;
-	overflow: hidden;
+	overflow: hidden; */
 }
 
 #radio li {
-	width: 20px;
-	height: 20px;
-	background-color: rgba(255, 255, 255, 0.5);
-	text-indent: -10000px;
-	border-radius: 50%;
-	margin-top: 12px;
-	cursor: pointer;
 }
 
 #radio li:first-child {
 	margin-top: 0;
 }
 
-.op-section {height:100vh;}
+/* .op-section {height:100vh;} */
 /*
 	set position to absolute(essential).
 	use margin to adjust gaps between LIs because ApplikeOnePage.js uses .outerHeight(true) method
@@ -124,14 +136,14 @@ li {
 */
 
 #radioOn {
-	width: 20px;
+	/* width: 20px;
 	height: 20px;
 	margin-bottom: 12px;
 	position: absolute;
 	top: 0;
 	left: 0;
 	background-color: #fff;
-	border-radius: 50%;
+	border-radius: 50%; */
 }
 
 .fromTopIn
