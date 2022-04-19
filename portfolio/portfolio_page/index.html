@@ -380,15 +380,22 @@
 		});
 		
 		// 포트폴리오에 마우스 오버 시 부모 스크롤 제어
-		$('.portfolio').mouseover(function() {
+		$('.swiper').mouseover(function() {
 			$('body').bind('mousewheel DOMMouseScroll', function() {
-				return true;
-			});
-			$(this).bind('mousewheel DOMMouseScroll', function() {
 				return false;
 			});
+			$(this).bind('mousewheel DOMMouseScroll', function() {
+				return true;
+			});
+		});
+		$('.swiper').mouseout(function() {
+			$(this).bind('mousewheel DOMMouseScroll', function() {
+				return true;
+			});
+			$('body').off('scroll touchmove mousewheel');
 		});
 
+		
 		</script>
 </body>
 </html>
