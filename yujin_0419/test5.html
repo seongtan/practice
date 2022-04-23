@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 
@@ -9,10 +8,10 @@
     <meta name="description" content="fullPage continuous scrolling demo." />
     <meta name="keywords"  content="fullpage,jquery,demo,scroll,loop,continuous" />
     <meta name="Resource-type" content="Document" />
-	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
-
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="http://code.jquery.com/jquery-1.12.3.min.js"></script>
 
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <link rel="stylesheet" type="text/css" href="./dist/fullpage.css" />
     <link rel="stylesheet" type="text/css" href="examples.css" />
 
@@ -29,14 +28,14 @@
 
     <!--[if IE]>
         <script type="text/javascript">
-             var console = { log: function() {} };
+            var console = { log: function() {} };
         </script>
     <![endif]-->
 </head>
 <body>
 
 
-<select id="demosMenu">
+<!-- <select id="demosMenu">
     <option selected>Choose Demo</option>
     <option id="simple">Simple</option>
     <option id="custom-arrows">Custom arrows</option>
@@ -90,7 +89,7 @@
     <option id="vue-fullpage">Vue component</option>
     <option id="react-fullpage">React component</option>
     <option id="angular-fullpage">Angular component</option>
-  </select>
+</select> -->
 
 <div id="fullpage">
     <div class="section" id="section0">
@@ -103,8 +102,9 @@
             </svg>
         </div>
     </div>
+
     <div class="section" id="section1">
-        <div class="con about">
+        <div class="con about test">
             <div class="me">
                 <h1>ABOUT ME</h1>
                 <p>안녕하세요. 신입 웹퍼블리셔 <span>이성탄</span>입니다.</p>
@@ -137,8 +137,9 @@
             </ul>
         </div>
     </div>
+
     <div class="section" id="section2">
-        <div class="con skills">
+        <div class="con skills test02">
             <h1>SKILLS</h1>
             <div class="container">
                 <div class="tabs">
@@ -169,8 +170,9 @@
             </div>
         </div>
     </div>
+    
     <div class="section" id="section3">
-        <div class="con portfolio">
+        <div class="con portfolio test03">
             <h1>PORTFOLIO</h1>
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
@@ -185,7 +187,7 @@
                                         휴먼스케이프 설명 휴먼스케이프 설명 휴먼스케이프 설명 <br>
                                         휴먼스케이프 설명 휴먼스케이프 설명 휴먼스케이프 설명 <br>
                                     </p>
-                                    <a href="../../Human_KR/humanscape.html" target="_blank">View more</a>
+                                    <a href="../Human_KR/humanscape.html" target="_blank">View more</a>
                                 </div>
                             </div>
                             <div class="swiper-pagination"></div>
@@ -219,7 +221,7 @@
                                         doob 설명 doob 설명 doob 설명 doob 설명 doob 설명 <br>
                                         doob 설명 doob 설명 doob 설명 doob 설명 doob 설명 <br>
                                     </p>
-                                    <a href="../../Doob/doob.html" target="_blank">View more</a>
+                                    <a href="../Doob/doob.html" target="_blank">View more</a>
                                 </div>
                             </div>
                             <div class="swiper-pagination"></div>
@@ -253,7 +255,7 @@
                                         doob 설명 doob 설명 doob 설명 doob 설명 doob 설명 <br>
                                         doob 설명 doob 설명 doob 설명 doob 설명 doob 설명 <br>
                                     </p>
-                                    <a href="../../Doob/doob.html" target="_blank">View more</a>
+                                    <a href="../Doob/doob.html" target="_blank">View more</a>
                                 </div>
                             </div>
                             <div class="swiper-pagination"></div>
@@ -287,7 +289,7 @@
                                         doob 설명 doob 설명 doob 설명 doob 설명 doob 설명 <br>
                                         doob 설명 doob 설명 doob 설명 doob 설명 doob 설명 <br>
                                     </p>
-                                    <a href="../../Doob/doob.html" target="_blank">View more</a>
+                                    <a href="../Doob/doob.html" target="_blank">View more</a>
                                 </div>
                             </div>
                             <div class="swiper-pagination"></div>
@@ -321,7 +323,7 @@
                                         doob 설명 doob 설명 doob 설명 doob 설명 doob 설명 <br>
                                         doob 설명 doob 설명 doob 설명 doob 설명 doob 설명 <br>
                                     </p>
-                                    <a href="../../Doob/doob.html" target="_blank">View more</a>
+                                    <a href="../Doob/doob.html" target="_blank">View more</a>
                                 </div>
                             </div>
                             <div class="swiper-pagination"></div>
@@ -358,13 +360,13 @@
 <script type="text/javascript">
     var myFullpage = new fullpage('#fullpage', {
         navigation:true,
-        navigationTooltips: ['Page 1', 'Page 2', 'Any text!'],
+        navigationTooltips: ['Home', 'About', 'Skills', 'Portfolio'],
         showActiveTooltip: true,
     });
 </script>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-		<script>
+    <script>
 		window.counter = function() {
 			// this refers to the html element with the data-scroll-showCallback tag
 			var span = this.querySelector('span');
@@ -409,8 +411,6 @@
 			});
 			$('body').off('scroll touchmove mousewheel');
 		});
-
-		
-		</script>
+	</script>
 </body>
 </html>

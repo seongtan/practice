@@ -125,7 +125,7 @@ input[id="radio_4"]:checked ~ .glider {transform: translateX(300%);}
 }
 
 #radio li:first-child {
-	margin-top: 0;
+	/* margin-top: 0; */
 }
 
 /* .op-section {height:100vh;} */

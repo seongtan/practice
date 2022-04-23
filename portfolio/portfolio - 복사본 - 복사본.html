@@ -6,9 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
     <title>포트폴리오</title>
+
     <!-- CSS 연결 -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <link href="portfolio - 복사본 - 복사본.css" rel="stylesheet">
+
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
 </head>
 
 <body>
@@ -52,7 +55,7 @@
         </ul>
     </header>
 
-    <div class="con home">
+    <div class="con home" id="section1">
         <svg height="90" width="230" stroke="#fff" stroke-width="1" class="text_line">
             <text style="font-family: 'vitro';  text-shadow: 2px 2px 3px;" x="25" y="70" fill="none" font-size = "65">Hello.</text>
         </svg>
@@ -61,7 +64,7 @@
         </svg>
     </div>
 
-    <div class="con about">
+    <div class="con about" id="section2">
         <div class="me">
             <h1>ABOUT ME</h1>
             <p>안녕하세요. 신입 웹퍼블리셔 <span>이성탄</span>입니다.</p>
@@ -94,7 +97,7 @@
         </ul>
     </div>
 
-    <div class="con skills">
+    <div class="con skills" id="section3">
         <h1>SKILLS</h1>
         <div class="container">
             <div class="tabs">
@@ -125,7 +128,7 @@
         </div>
     </div>
 
-    <div class="con portfolio">
+    <div class="con portfolio" id="section4">
         <h1>PORTFOLIO</h1>
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
@@ -317,6 +320,41 @@
             clickable: true,
         },
     });
+
+    var mHtml = $("html");
+    var page = 1;
+
+    mHtml.animate({scrollTop : 0},10);
+
+    $(window).on("wheel", function(e) {
+    if(mHtml.is(":animated")) return;
+    if(e.originalEvent.deltaY > 0) {
+        if(page == 4) return;
+        page++;
+    } else if(e.originalEvent.deltaY < 0) {
+        if(page == 1) return;
+        page--;
+    }
+    var posTop =(page-1) * $(window).height();
+    mHtml.animate({scrollTop : posTop});
+    })
+
+	// 포트폴리오에 마우스 오버 시 부모 스크롤 제어
+	$('.swiper').mouseover(function() {
+		$('body').bind('mousewheel DOMMouseScroll', function() {
+			return false;
+		});
+		$(this).bind('mousewheel DOMMouseScroll', function() {
+			return true;
+		});
+	});
+	$('.swiper').mouseout(function() {
+		$(this).bind('mousewheel DOMMouseScroll', function() {
+			return true;
+		});
+		$('body').off('scroll touchmove mousewheel');
+	});
+
     </script>
 </body>
 </html>
