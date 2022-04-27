@@ -18,6 +18,7 @@ a {text-decoration:none;color:initial}
 .gnb_box {display:flex}
 .gnb_menu {display:flex;align-items:center;}
 .gnb_menu ul {display:flex}
+.gnb_menu ul li {width: 123px;}
 .gnb_menu ul li a {display:inline-block;padding:10px;font-size:15px}
 .gnb_menu ul li:hover {border-radius:30px;background:#fff}
 .gnb_menu ul li+li {margin-left:15px}
