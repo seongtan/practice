@@ -43,7 +43,7 @@ a {text-decoration:none;color:initial}
     .wrap .header .logo {width:20vh}
     .wrap .header .gnb_menu .connect {margin-right:20px}
     .gnb_menu {position:absolute;top:0;right:0;margin:0;width:0;height:100%;transition: 0.5s ease;z-index:1}
-    .gnb_menu:before {position:absolute;top:0;right:0;display:inline-block;width:0;height:100%;background:red;z-index:1;transition: 0.7s ease;opacity:0.5;content:''}
+    .gnb_menu:before {position: fixed;top:0;right:0;display:inline-block;width:0;height:100%;background:red;z-index:1;transition: 0.5s ease;opacity:0.5;content:''}
     .gnb_menu ul {display:block;z-index:2;}
     .gnb_menu ul li+li {margin:0}
     .burger-icon {display:block}
