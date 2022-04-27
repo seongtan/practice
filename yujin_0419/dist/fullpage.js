@@ -5054,19 +5054,19 @@
       return nullOrSlide(getState().activeSection.activeSlide.item);
     }
 
-    EventEmitter.on('bindEvents', init$1);
+    // EventEmitter.on('bindEvents', init$1);
 
-    function init$1() {
-      var position = getOptions().credits.position;
-      var positionStyle = ['left', 'right'].indexOf(position) > -1 ? "".concat(position, ": 0;") : '';
-      var waterMark = "\n        <div class=\"fp-watermark\" style=\"".concat(positionStyle, "\">\n            <a href=\"https://alvarotrigo.com/fullPage/\" \n                rel=\"nofollow noopener\" \n                target=\"_blank\" \n                style=\"text-decoration:none; color: #000;\">\n                    ").concat(getOptions().credits.label, "\n            </a>\n        </div>\n    ");
-      var lastSection = getLast(state.sections);
-      var shouldUseWaterMark = getOptions().credits.enabled && !state.isValid;
+    // function init$1() {
+    //   var position = getOptions().credits.position;
+    //   var positionStyle = ['left', 'right'].indexOf(position) > -1 ? "".concat(position, ": 0;") : '';
+    //   var waterMark = "\n        <div class=\"fp-watermark\" style=\"".concat(positionStyle, "\">\n            <a href=\"https://alvarotrigo.com/fullPage/\" \n                rel=\"nofollow noopener\" \n                target=\"_blank\" \n                style=\"text-decoration:none; color: #000;\">\n                    ").concat(getOptions().credits.label, "\n            </a>\n        </div>\n    ");
+    //   var lastSection = getLast(state.sections);
+    //   var shouldUseWaterMark = getOptions().credits.enabled && !state.isValid;
 
-      if (lastSection && lastSection.item && shouldUseWaterMark) {
-        lastSection.item.insertAdjacentHTML('beforeend', waterMark);
-      }
-    }
+    //   if (lastSection && lastSection.item && shouldUseWaterMark) {
+    //     lastSection.item.insertAdjacentHTML('beforeend', waterMark);
+    //   }
+    // }
 
     !function () {
       EventEmitter.on("onInitialise", function () {
