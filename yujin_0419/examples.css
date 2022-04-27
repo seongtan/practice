@@ -356,7 +356,10 @@ input[id="radio_4"]:checked ~ .glider {transform: translateX(300%);}
 	#fp-nav ul li {width: 90px;height: 31px;}
 	#fp-nav ul li:last-child {width: 110px;}
 
-	.con.home {}
+	.con.home svg.text_line {width: 200px;}
+	.con.home svg.text_line text {font-size: 55px;}
+	.con.home svg.text_line.text {width: 845px;}
+	.con.home svg.text_line.text text {font-size: 58px;}
 
 	.con {width: 100%;padding: 65px 0 0;}
 	.con.about {align-items: center;}
@@ -390,12 +393,18 @@ input[id="radio_4"]:checked ~ .glider {transform: translateX(300%);}
 	#fp-nav ul li:nth-child(4) a:after {background: url(data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='27' height='27' fill='%23fff' class='bi bi-file-earmark-text' viewBox='0 0 16 16'%3E%3Cpath d='M5.5 7a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5z'%3E%3C/path%3E%3Cpath d='M9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.5L9.5 0zm0 1v2A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z'%3E%3C/path%3E%3C/svg%3E) center / 24px no-repeat;}
 	#fp-nav ul li .fp-tooltip.fp-left {top: 7px;left: 35px;font-size: 14px;}
 
+	/* .con.home svg.text_line {width: 200px;}
+	.con.home svg.text_line text {font-size: 55px;}
+	.con.home svg.text_line.text {width: 845px;}
+	.con.home svg.text_line.text text {font-size: 58px;} */
 
 	.con h1 {font-size: 40px;}
 
 	.con.about .me p {font-size: 18px;}
 	.con.about ul {width: 337px;padding: 50px 100px 0;}
 	.con.about ul li {font-size: 16px;line-height: 60px;}
+
+	.con.skills .container .tab {transform: scale(0.6);}
 
 	.portfolio .swiper.mySwiper .swiper-wrapper .swiper-slide .img {
 		/* 이미지 줄이는 방법 */
