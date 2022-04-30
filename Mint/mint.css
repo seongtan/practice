@@ -15,7 +15,7 @@ header .wrap .menu li a {color: #000;}
 .wrap .tit {font-size: 60px;}
 .wrap .hello .hello_tit p {font-size: 13px;line-height: 2;margin-top: 30px;}
 .wrap .btn_box {margin-top: 45px;}
-.wrap .btn_box button {border: none;background: #ffe600;border: 1px solid #ffe600;font-size: 14px;font-weight: bold;padding: 15px 30px;cursor: pointer;}
+.wrap .btn_box button {background: #ffe600;border: 1px solid #ffe600;font-size: 14px;font-weight: bold;padding: 15px 30px;cursor: pointer;}
 .wrap .btn_box button:hover {background: #fff;}
 .wrap .hello .hello_img {width: 565px;height: 525px;background: #edf2f6;}
 
