@@ -1,0 +1,68 @@
+body {margin:0;padding:0;}
+ul, li {list-style: none;margin: 0;padding:0}
+.nav {background-color: #febd10;}
+.wrap {width:1050px;margin:0 auto;overflow: hidden;} 
+.wrap.content {min-height: 975px;}
+
+/* 네비게이션 */
+.nav .wrap .logo {margin:15px 20px;}
+.nav .wrap .list {float:right;;margin-top:35px;}
+.nav .wrap .list li {display:inline-block;margin-right:40px;color:#fff;}
+.nav .wrap .list li a {color:#fff;text-decoration: none;}
+.nav .wrap .list li:last-child {margin:0}       
+/* 메인 배너 */
+.banner {background-image:url(../img/banner.jpg)}
+.banner .gnd {width:1050px;margin:0 auto;overflow:hidden;position:relative;padding:30px 0 30px 100px;box-sizing:border-box;}
+.banner .gnd .banner_title {font-size:23px;color:#fff;margin:0;margin-bottom:28px;}
+.banner .gnd .banner_event {font-size:33px;color:#fff;margin:0;}
+.banner .gnd .banner_btn {border:2px solid #fff;color:#fff;background:none;padding:10px 65px;position:absolute;top:60px;right:130px;font-size:20px;}
+/* 컨텐츠 메뉴 , 곱창+닭다리 */
+.wrap .menu li {width:522px;display:inline-block;margin-top:40px;}
+.wrap .menu li .menu_left {display:inline-block;}
+.wrap .menu li .menu_right {display:inline-block;margin-left:20px;vertical-align: super;}
+.wrap .menu li .menu_right .title {font-size:18px;margin:0;}
+.wrap .menu li .menu_right .title.hot::after {content:'HOT';font-size:14px;border-radius:5px;padding:2px 8px;background-color:#f0001e;margin-left:5px;color:#fff;}
+.wrap .menu li .menu_right .price {font-size:16px;margin-top:25px;margin-bottom:10px;}
+.wrap .menu li .menu_right .star {display:inline-block;}
+.wrap .menu li .menu_right .star_right {display:inline-block;font-size:16px;margin:0;color:#febd10;}
+.wrap .menu li .menu_right .menu_title {font-size:16px;margin:0;margin-top:10px;color:#848484;opacity:1;}
+/* 회원가입 테이블 */
+.wrap .container .title {font-size: 23px;border-bottom: 1px solid #000;margin: 0;padding: 45px 0 30px 35px;}
+.wrap .container .title.title02 {padding-top:100px;}
+.wrap .container table {border-collapse: collapse;width:100%;margin-top:35px;}
+.wrap .container table th,td {border:1px solid #e8e8e8;}
+.wrap .container table th {text-align: left;border-right: none;font-size: 14px;width: 150px;height: 60px;padding-left: 20px;}
+.wrap .container table td {border-left: none;}
+.wrap .container table span {color: #f1263a;vertical-align: middle;}
+.wrap .container table input {border: none;width: 50%;}
+.wrap .container table tr:nth-child(4) td input,
+.wrap .container table tr:nth-child(5) td input {margin-top:12px;}
+.wrap .container table td .btn {font-size: 14px;color: #fff;border: none;background-color: #febd10;padding: 10px 40px;float: right;margin-right: 25px;}
+.wrap .container table td .btn02 {background-color: #fff;color: #848484;border:1px solid #e8e8e8;}
+/* 약관동의 */
+.wrap .container label {display: block;font-size: 14px;}
+.wrap .container label:first-child {margin-top: 40px;margin-bottom: 30px;}
+.wrap .container span {vertical-align: middle;color: #f0001e;}
+.wrap .container textarea {margin-top: 35px;width: 100%;border-color: #e8e8e8;height: 75px;resize: none;padding-left: 20px;}
+.wrap .container .btn03 {color: #fff;font-size: 16px;background-color: #000;border: none;padding: 10px 50px;display: inherit;margin: 0 auto;margin-top: 30px;}
+/* 푸터*/
+.footer {background-color: #3d3d3d;}
+.footer .wrap span {float: right;font-size: 18px;color: #fff;margin-top: 30px;margin-right: 30px;}
+.footer .wrap .footer_box {display: inline-block;padding: 30px 0 30px 25px}
+.footer .wrap .footer_box ul li {display: inline-block;font-size: 14px;color: #fff;}
+.footer .wrap .footer_box p {margin: 0;font-size: 11px;color: #acacac}
+.footer .wrap .footer_box .txt {margin-top: 20px;margin-bottom: 10px}
+
+
+        /* 
+background-image:url(경로);
+background-repeat:no-repeat;
+opacity(오퍼시티) : 불투명도 0, 0.3, 0.5,  1 */
+     
+
+/* wrap은 큰 틀을 말함*/
+/* gnb는 맨상단위에 메뉴를 뜻하기 때문에 공통적인 클래스에는 허용되지않음
+
+page-content
+
+*/
