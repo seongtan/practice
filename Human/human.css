@@ -1,0 +1,196 @@
+body {margin:0;padding:0;}
+ul, li {list-style: none;margin: 0;padding:0}
+p,h1,h5 {margin: 0;padding:0}
+a {text-decoration: none;}
+
+/* header */
+.wrap {width: 1200px;margin: 0 auto;position: relative;}
+header .wrap {display: flex;justify-content: space-between;align-items: center;padding: 35px 0;}
+header .wrap img {margin-left: 20px;}
+header .wrap .menu {display: flex;line-height: 30px;}
+header .wrap .menu li {position: relative;font-size: 16px;margin-right: 40px;}
+header .wrap .menu li:nth-child(5) {margin-right: 65px;}
+header .wrap .menu .language {margin-right: 20px;}
+header .wrap .menu li a {color: #222222;}
+header .wrap .menu .menu_box {left: -15px;display: none;width: 185px;background-color: #7f7f7f;position: absolute;z-index: 10;}
+header .wrap .menu .menu_box li {margin: 15px;line-height: 35px;}
+header .wrap .menu .menu_box li a {color: #fff;}
+header .wrap .menu li:hover .menu_box {display: block;}
+
+/* humanscape-container */
+.container .wrap .contents::after {background-image: url(./img/Humanscape\ img.png);content: '';width: 756px;height: 354px;position: absolute;bottom: 0;right: 20px;}
+.container .wrap .contents {height: 530px;padding-top: 70px;position: relative;margin-left: 10px;}
+.container .wrap .contents h1 {font-size: 56px;color: #222222;margin-bottom: 35px;}
+.container .wrap .contents h5 {font-size: 22px;color: #707070;}
+.container .wrap .list {display: flex;justify-content: space-between;padding: 65px 0;}
+.container .wrap .list li {width: 300px;text-align: center;cursor: pointer;position: relative;}
+.container .wrap .list li + li::before {content: '';position: absolute;width: 80px;height: 1px;left: -115px;bottom: 45px;background-color: #a2a1a0;}
+.container .wrap .list li a {color: #a2a1a0;}
+.container .wrap .list li:hover a {color: #000;}
+.container .wrap .list li span {font-size: 16px;}
+.container .wrap .list li p {font-size: 24px;margin-top: 30px;}
+
+/* humanscape01-banner */
+.banner {height: 410px;}
+.banner .wrap {height:100%}
+.banner .wrap::after {background-image: url(./img/Humanscape\ img02.png);content: '';width: 699px;height: 336px;position: absolute;bottom: -15px;right: -145px;}
+.banner .wrap h1, .banner .wrap p {margin-left: 10px;color: #43363a;}
+.banner .wrap h1 {font-size: 50px;padding-top: 45px;}
+.banner .wrap p {font-size: 20px;line-height: 1.8;margin-top: 35px;letter-spacing: -1px;}
+
+/* humanscape01-banner_en */
+.banner_en {height: 390px;}
+.banner_en .wrap p {letter-spacing: 0;}
+
+/* humanscape01-human */
+.human {background-color: #fbfbfa;min-height: 335px;}
+.human .wrap::before {background-image: url(./img/Humanscape\ img03.png);content: '';width: 601px;height: 312px;position: absolute;top: 65px;}
+.human .wrap div {width: 570px;float: right;margin-top: 85px;}
+.human .wrap div h5 {font-size: 30px;color: #212121;margin-bottom: 30px;}
+.human .wrap div p {font-size: 16px;color: #6b6b6b;line-height: 1.9;}
+
+/* humanscape01-human_en */
+.human_en {min-height: 405px;}
+.human_en .wrap::before {top: 135px;}
+
+/* humanscape01-history */
+/* .history {min-height: 1300px;} */
+.history .wrap {display: flex;justify-content: space-between;padding: 130px 0 45px;}
+.wrap .title {font-size: 30px;color: #332c30;margin-left: 10px;}
+
+/* humanscape01-history_en */
+.history_en .wrap img {width: 866px;}
+
+/* humanscape01-partners */
+.partners {background-color: #fdfdfa;}
+.partners .wrap {display: flex;justify-content: space-between;padding: 80px 0 35px;}
+.partners .wrap ul li {display: inline-block;}
+.partners .wrap div ul {overflow: hidden;}
+.partners .wrap div .partners_list li {font-size: 17px;color: #979797;font-weight: bold;float:left;padding: 0 25px 10px;line-height:40px;cursor: pointer;}
+.partners .wrap div .partners_list li:first-child {color: #212121;}
+.partners .wrap div ul li.active {position:relative;border-bottom:2px solid #000;font-weight:bold;}
+.wrap .line {margin-top:-2px;width:100%;height:2px;background:#ddd;float: left;}
+.partners .wrap div .partners_list li:hover {color: #212121;position: relative;border-bottom: 2px solid #212121;z-index: 2;}
+.partners .wrap div .img_list {width: 872px;margin-top: 30px;}
+.partners .wrap div .img_list li + li {margin-left: 25px;}
+.partners .wrap div .img_list li:nth-child(4) {margin-left: 0;margin-top: 5px;}
+
+/* humanscape01-partners_en */
+.partners_en .wrap div .partners_list li {font-size: 18px;}
+
+/* humanscape01-service */
+.service .wrap {overflow: hidden;}
+.service .wrap .service_right {float: right;text-align: right;padding: 50px 100px;}
+.service .wrap .service_right.en {padding: 40px 110px;}
+.service .wrap .service_right p {font-size: 16px;color: #999999;}
+.service .wrap .service_right h5 {font-size: 20px;color: #464341;margin-top: 25px;}
+.service .wrap .service_right a:hover p {color: #464341;}
+.service .wrap .service_right a h5::after {content:'';width: 22px;height: 20px;background-image: url(./img/Human\ icon.jpg);position: absolute;right: 15px;bottom: 67px;}
+
+/* humanscape02-note */
+.note .wrap {padding-top: 45px;height: 460px;}
+.note .wrap.platform::after {background-image: url(./img/Human\ img01.png);content: '';width: 672px;height: 350px;position: absolute;right: -150px;bottom: 20px;}
+.note .wrap .note_box {margin-left: 10px;color: #43363a;}
+.note .wrap .note_box h5 {font-size: 35px;}
+.note .wrap .note_box h1 {font-size: 45px;margin-bottom: 40px;}
+.note .wrap .note_box p {font-size: 20px;line-height: 1.7;letter-spacing: -2px;margin-bottom: 20px;}
+.note .wrap .note_box .app {margin-right: 20px;}
+
+/* humanscape02-note_en */
+.note_en .wrap {height: 520px;}
+.note_en .wrap .note_box h5 {font-size: 40px;margin-bottom: 10px;}
+.note_en .wrap .note_box h1 {font-size: 30px;}
+.note_en .wrap .note_box p {letter-spacing: 0;}
+
+/* humanscape02-service_data */
+.service_data {background-color: #fbfbfa;}
+.service_data .wrap {display: flex;justify-content: space-between;padding: 80px 0;}
+.service_data .wrap .data_box {width: 870px;}
+.service_data .wrap .data_box ul {overflow: hidden;}
+.service_data .wrap .data_box ul li {float: left;padding: 0 20px 5px;font-size: 18px;color: #979797;line-height: 40px;cursor: pointer;;font-weight: bold;}
+.service_data .wrap .data_box ul li:first-child {color: #212121;}
+.service_data .wrap .data_box ul li.active {position: relative;border-bottom: 2px solid #212121;z-index: 2;}
+.service_data .wrap .data_box ul li:hover {color: #212121;position: relative;border-bottom: 2px solid #212121;z-index: 2;}
+.service_data .wrap .data_box .data_box02 {display: flex;margin-top: 50px;}
+.service_data .wrap .data_box .data_box02.mydata::before {background-image: url(./img/Human\ img02.png);content: '';width: 196px;height: 393px;}
+.service_data .wrap .data_box .data {margin-left: 95px;}
+.service_data .wrap .data_box .data h5 {font-size: 24px;color: #212121;letter-spacing: -2px;}
+.service_data .wrap .data_box .data_box02.mydata .data h5::before {background-image: url(./img/Human\ img03.png);content: '';width: 89px;height: 89px;display: block;}
+.service_data .wrap .data_box .data p {color: #343434;margin-top: 15px;line-height: 1.5;letter-spacing: -1px;}
+.service_data .wrap .data_box .data .health {font-size: 16px;color: #6b6b6b;line-height: 1;}
+.service_data .wrap .data_box .data .patients {font-size: 14px;margin-top: 35px;}
+.service_data .wrap .data_box .data .explanation {font-size: 12px;}
+
+/* humanscape02-service_data_en */
+.service_data_en .wrap .data_box .data h5,
+.service_data_en .wrap .data_box .data p {letter-spacing: 0;line-height: normal;}
+.service_data_en .wrap .data_box .data .patients {margin-top: 30px;}
+.service_data_en .wrap .data_box ul li {line-height: 25px;}
+.service_data_en .wrap .data_box ul li:first-child {line-height: 50px;}
+
+/* humanscape02-rare */
+.rare .wrap {display: flex;justify-content: space-between;padding: 80px 0;}
+.rare .wrap .h5 {font-size: 26px;color: #332c30;margin-left: 10px;line-height: 1.5;}
+.rare .wrap .rare_box {width: 860px;display: flex;justify-content: space-between;align-items: baseline;padding-top: 35px;}
+.rare .wrap .rare_box .rare_left.box02::before {background-image: url(./img/Human\ img04.png);content: '';width: 365px;height: 256px;display: block;margin-bottom: 100px;}
+.rare .wrap .rare_box .rare_right.box02::before {background-image: url(./img/Human\ img05.png);content: '';width: 319px;height: 281px;display: block;margin-bottom: 100px;}
+.rare .wrap .rare_box .box02 h5 {font-size: 20px;color: #332c30;text-align: center;letter-spacing: -1px;margin-bottom: 20px;}
+.rare .wrap .rare_box .box02 p {font-size: 14px;color: #332c30;line-height: 2;letter-spacing: -1px;}
+.rare .wrap .rare_box .rare_left.box02 .rare_p {margin-top: 35px;}
+
+/* humanscape02-rare_en*/
+.rare_en .wrap .rare_box .box02 img {margin-bottom: 85px;}
+.rare_en .wrap .rare_box .box02 h5 {letter-spacing: 0;line-height: 36px;margin-bottom: 10px;}
+.rare_en .wrap .rare_box .box02 p {font-size: 15px;letter-spacing: 0;}
+.rare_en .wrap .rare_box .rare_left .rare_p {margin-top: 25px;}
+
+/* humanscape02-change */
+.change {background-color: #f7f6f2;}
+.change .wrap.con {padding: 90px 0;}
+.change .wrap.con::after {background-image: url(./img/Human\ img06.png);content: '';width: 407px;height: 329px;position: absolute;right: 25px;bottom: 0px;}
+.change .wrap h5 {font-size: 24px;color: #332c30;line-height: 1.5;margin-bottom: 30px;}
+.change .wrap p {font-size: 16px;color: #676564;margin-bottom: 25px;}
+.change .wrap .app {margin-right: 20px;}
+
+/* humanscape02-change_en */
+.change_en .wrap.con {padding: 100px 0;}
+.change_en .wrap h5 {font-size: 30px;}
+
+/* humanscape02-about */
+.about .wrap .about_left {display: inline-block;padding: 50px 100px;}
+.about .wrap .about_left.en {padding: 35px 0px;padding: 35px 110px;}
+.about .wrap .about_left a p {font-size: 16px;color: #999999;}
+.about .wrap .about_left a h5 {font-size: 21px;color: #464341;margin-top: 25px;}
+.about .wrap .about_left a h5::before {content:'';width: 22px;height: 20px;background-image: url(./img/Human\ icon01.jpg);position: absolute;bottom: 67px;left: 10px;}
+.service .wrap .about_left a:hover p {color: #464341;}
+
+/* humanscape03-rewards */
+.note.rewards .wrap::after {background-image: url(./img/Human\ img09.png);content: '';width: 592px;height: 269px;position: absolute;bottom: 55px;right: 30px;}
+.note.rewards .wrap .rewards_box img {width: 146px;height: 51px;margin-right: 20px;}
+
+/* humanscape03-rewards_en */
+.rewards_en .wrap .rewards_box h1 {margin-bottom: 10px;}
+.rewards_en .wrap .rewards_box h5 {margin-bottom: 40px;}
+
+/* humanscape03-service_re */
+.service_re  .wrap .data_box .data_box02::before {background-image: url(./img/Human\ img07.png);content: '';width: 196px;height: 365px;}
+.service_re  .wrap .data_box .data_box02 .data h5::before {background-image: url(./img/Human\ img08.png);content: '';width: 88px;height: 88px;display: block;}
+
+/* humanscape03-service_re_en */
+.service_re_en .wrap .data_box ul li {text-align: center;line-height: 27px;}
+
+/* humanscape03-every */
+.change.every {background-color: #fff;}
+.change.every .wrap {padding: 100px 0;}
+.change.every .wrap::after {background-image: url(./img/Human\ img10.png);content: '';width: 398px;height: 246px;position: absolute;bottom: 75px;right: 80px;}
+.change.every .wrap h5 {font-size: 28px;letter-spacing: -1px;}
+.change.every .wrap p {letter-spacing: -1px;}
+.change.every .wrap img {margin-right: 20px;}
+
+/* footer */
+footer {background-color: #f9f9f8;}
+footer .wrap {padding: 40px 0;}
+footer .wrap .txt_box .tit {font-size: 16px;color: #919191;margin: 0;}
+footer .wrap .txt_box .information {font-size: 12px;color: #6b6b6b;margin-top: 10px;}
+footer .wrap .txt_box .address {font-size: 12px;color: #464341;margin-top: 15px;}
+footer .wrap a {position: absolute;bottom: 45px;right: 15px;color: #000;background-color: #fff;border: 1px solid #979797;border-radius: 5px;font-size: 12px;padding: 10px 30px;}
