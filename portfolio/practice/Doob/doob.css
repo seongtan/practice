@@ -47,7 +47,7 @@ header .wrap .btn:hover {color: #314584;}
 .wrap .work {padding: 100px 0;}
 .wrap .work .title.tit {margin: 0;}
 .wrap .work ul {display: flex;flex-wrap: wrap;justify-content: space-between;margin-top: 50px;}
-.wrap .work ul li a {display: inline-block;height: 280px;margin-bottom: 35px;position: relative;overflow: hidden;}
+.wrap .work ul li a {display: inline-block;height: 280px;margin-bottom: 35px;vertical-align: bottom;position: relative;overflow: hidden;}
 .wrap .work ul li a::before {content: "";padding: 25%;background-color: #314584;opacity: 0.8;border-radius: 50%;position: absolute;top: 50%;left: 50%;transition: transform calc(var(--photoboxAnimationDuration, .8s) / 2) ease;transform: translate(-50%, -50%) scale(0);}
 .wrap .work ul li:hover a::before {transform: translate(-50%, -50%) scale(4);transition-duration: var(--photoboxAnimationDuration, .8s);}
 .wrap .work ul li a span {opacity: 0;transition: opacity calc(var(--photoboxAnimationDuration, .8s) / 4) cubic-bezier(0.71, 0.05, 0.29, 0.9), transform calc(var(--photoboxAnimationDuration, .8s) / 4) cubic-bezier(0.71, 0.05, 0.29, 0.9);position: absolute;top: 50%;left: 50%;transform: translate(-50%, 200%);color: #fff;font-weight: bold;font-size: 1.1rem;}

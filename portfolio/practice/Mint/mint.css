@@ -79,8 +79,8 @@ header .wrap .menu li a:hover {color: #ffe600;}
 
 /* container */
 .container {background: #fdfdfd;padding: 100px 0;}
-.container .wrap .ul_box li .post {height: 280px;}
-.container .wrap .ul_box li .post a {display: inline-block;height: 100%;}
+/* .container .wrap .ul_box li .post {height: 280px;} */
+.container .wrap .ul_box li a {display: inline-block;height: 280px;vertical-align: bottom;}
 .container .wrap .ul_box li .blog {background: #fff;padding: 30px;}
 .container .wrap .ul_box li .blog strong {font-size: 15px;}
 .container .wrap .ul_box li .blog .text {font-size: 12px;}

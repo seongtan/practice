@@ -250,7 +250,7 @@ body {overflow-y: hidden;background: #2f3336;}
 .con.skills .container .tabs {display: flex;color: #494a50;}
 .con.skills .container .tabs .tab {display: flex;align-items: center;justify-content: center;height: 54px;width: 200px;font-family: 'score3';font-weight: bold;font-size: 23px;cursor: pointer;transition: color 0.10s ease-in;}
 .con.skills .container .tabs .glider {position: absolute;height: 54px;width: 200px;background: #494a50;border-radius: 10px;transition: 0.25s ease-out;}
-.con.skills .container .tabs .txt_box {display: flex;justify-content: center;width: 800px;font-family: 'score3';font-size: 19px;color: #fff;position: absolute;top: 120px;}
+.con.skills .container .tabs .txt_box {display: flex;justify-content: center;width: 800px;font-family: 'score3';font-size: 19px;line-height: 50px;color: #fff;position: absolute;top: 120px;}
 .con.skills .container .tabs .txt_box .txt {display: none;}
 input[type="radio"] {display: none;}
 input[type="radio"]:checked + label {color: #fff;z-index: 2;}
