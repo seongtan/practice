@@ -256,8 +256,7 @@ body {overflow-y: hidden;background-color: var(--bg-color);}
 .con.about ul li strong {display: inline-block;width: 150px;}
 .con.about ul li span {position: relative;}
 .con.about ul li span::before {content: '';border-left: 2px solid #fff;position: absolute;top: 2px;bottom: 0px;left: -30px;}
-.fp-viewing-1 .con.about {animation:fadeIn 1s linear;}
-
+.fp-viewing-1 .con.about {animation: fadeIn 1.2s cubic-bezier(0.65, 0.05, 0.36, 2);}
 
 /* skills */
 .con.skills .container {width: 800px;min-height: 350px;background: #222128;border-radius: 15px;padding: 0.75rem;margin: 50px auto 0;position: relative;}
@@ -412,7 +411,7 @@ html[data-theme="light"] h1 {color: #2f3336;}
 @keyframes fadeIn {
 	0% {
 		opacity: 0;
-		transform: translate3d(0, 10%, 0);
+		transform: translate3d(0, 30%, 0);
 	}
 	100% {
 		opacity: 1;
