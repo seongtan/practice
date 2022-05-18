@@ -24,20 +24,24 @@ header .wrap .menu li a:hover {color: #ffe600;}
 .wrap .work .menu_box {display: flex;justify-content: space-between;margin-top: 35px;}
 .wrap .work .menu_box .list {display: flex;justify-content: space-between;width: 350px;}
 .wrap .work .menu_box .list li {font-size: 13px;cursor: pointer;padding: 5px 15px;}
-.wrap .work .menu_box .list .all {background: #ffe600;}
+.wrap .work .menu_box .list li:first-child {background: #ffe600;}
 .wrap .work .menu_box .list li:hover {background: #ffe600;}
 .wrap .work .menu_box .first {position: relative;}
 .wrap .work .menu_box .first span {font-size: 13px;cursor: pointer;}
 .wrap .work .menu_box .first .drop {display: none;width: 120px;height: 100px;background: #fbfbfb;position: absolute;right: -10px;border-radius: 5px;box-shadow: 0px 1px 5px 1px #ddd;margin-top: 5px;}
 .wrap .work .menu_box .first .drop a {display: block;font-size: 13px;text-align: center;color: #000;padding: 15px 0;}
 .wrap .work .menu_box .first .drop a:hover {background: #ffe600;}
-.wrap .work .menu_box .first:hover .drop {display: flex;flex-direction: column;justify-content: center;}
+.wrap .work .menu_box .first:hover .drop {display: flex;flex-direction: column;justify-content: center;z-index: 1;}
 .wrap .work .box {display: flex;justify-content: space-between;margin-top: 75px;}
-.wrap .work .box li {height: 830px;display: flex;flex-direction: column;justify-content: space-between;}
-.wrap .work .box li a {display: inline-block;vertical-align: bottom;}
+.wrap .work .box li {min-height: 830px;display: flex;flex-direction: column;justify-content: space-between;}
 .wrap .work .box li a.short {height: 300px;}
 .wrap .work .box li a.long {height: 500px;}
 .wrap .work .btn_box {text-align: center;margin: 50px 0;}
+.wrap .work .box li a .read span {font-size: 13px;}
+.wrap .box li a {display: inline-block;vertical-align: bottom;position: relative;}
+.wrap .box li a .read {width: 100%;height: 100%;display: flex;flex-direction: column;justify-content: center;align-items: center;color: #000;background: rgba(255,230,0,.8);position: absolute;bottom: 0;opacity: 0;transition: .3s ease;}
+.wrap .box li a .read strong {font-size: 32px;}
+.wrap .box li a:hover .read {opacity: 1;}
 
 /* img_box */
 .img_box {height: 300px;background: #fdfdfd;}
@@ -68,7 +72,7 @@ header .wrap .menu li a:hover {color: #ffe600;}
 
 /* container */
 .container {background: #fdfdfd;padding: 100px 0;}
-.container .wrap .ul_box li a {display: inline-block;height: 280px;vertical-align: bottom;}
+.container .wrap .ul_box li a {height: 280px;}
 .container .wrap .ul_box li .blog {background: #fff;padding: 30px;}
 .container .wrap .ul_box li .blog strong {font-size: 15px;}
 .container .wrap .ul_box li .blog .text {font-size: 12px;}
@@ -86,7 +90,7 @@ header .wrap .menu li a:hover {color: #ffe600;}
 .wrap .con .con_sub .con_right {background: url(../Mint/img/13.png);width: 570px;height: 470px;}
 .wrap .con .icon_box {display: flex;justify-content: space-evenly;padding: 70px 35px;}
 .wrap .con .icon_box .icon {display: flex;flex-direction: column;align-items: center;font-size: 12px;line-height: 20px;}
-.wrap .con .icon_box .icon::before {content: '';margin-bottom: 20px;}
+.wrap .con .icon_box .icon::before {content: '';display: block;margin-bottom: 20px;}
 .wrap .con .icon_box .icon.avenue::before {background-image: url(./img/icon_01.png);width: 23px;height: 28px;}
 .wrap .con .icon_box .icon.number::before {background-image: url(./img/icon_02.png);width: 18px;height: 28px;}
 .wrap .con .icon_box .icon.email::before {background-image: url(./img/icon_03.png);width: 27px;height: 26px;}

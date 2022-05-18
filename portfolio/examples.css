@@ -208,7 +208,7 @@ abbr,acronym { border: 0;
     height: 300px;
 }
 
-body {overflow-y: hidden;background: #2f3336;}
+body {overflow-y: hidden;background-color: var(--bg-color);}
 
 @font-face {
     font-family: 'vitro';
@@ -227,6 +227,19 @@ body {overflow-y: hidden;background: #2f3336;}
     src: url(./S-Core_Dream_OTF/SCDream5.otf);
 }
 
+
+
+
+.dark {position: fixed;top: 10px;right: 10px;z-index: 999;}
+.dark input[type=checkbox] {display: none;}
+.dark input[type=checkbox]:checked + label {background:#222128}
+.dark input[type=checkbox]:checked + label:before {background-color: #fff;transform: translateX(35px);}
+.dark input[type=checkbox]:checked + label:after {transform: translateX(100px) scale(1);}
+.dark label {position: relative;display: inline-block;width: 75px;height: 40px;border-radius: 100px;background-color: #ffe4bb;overflow: hidden;cursor: pointer;}
+.dark label:before, label:after {display: block;position: absolute;content: "";width: 32px;height: 32px;border-radius: 50%;top: 4px;left: 4px;transition: 0.5s ease;}
+.dark label:before {background-color: #ffa41b;}
+.dark label:after {background-color: #222128;left: -75px;transform: scale(0.00001);}
+
 .con {height: 100vh;width: 1250px;margin: 0 auto;padding: 150px 120px;box-sizing: border-box;display: flex;flex-direction: column;justify-content: center;}
 .con h1 {font-family: 'vitro';font-size: 50px;color: #fff;text-align: center;}
 
@@ -243,6 +256,8 @@ body {overflow-y: hidden;background: #2f3336;}
 .con.about ul li strong {display: inline-block;width: 150px;}
 .con.about ul li span {position: relative;}
 .con.about ul li span::before {content: '';border-left: 2px solid #fff;position: absolute;top: 2px;bottom: 0px;left: -30px;}
+.fp-viewing-1 .con.about {animation:fadeIn 1s linear;}
+
 
 /* skills */
 .con.skills .container {width: 800px;min-height: 350px;background: #222128;border-radius: 15px;padding: 0.75rem;margin: 50px auto 0;position: relative;}
@@ -261,6 +276,7 @@ input[id="radio_4"]:checked ~ .glider {transform: translateX(300%);}
 .con.skills .container .tabs #radio_2:checked ~ .txt_box #radio_2_txt,
 .con.skills .container .tabs #radio_3:checked ~ .txt_box #radio_3_txt,
 .con.skills .container .tabs #radio_4:checked ~ .txt_box #radio_4_txt {display: block;}
+.fp-viewing-2 .con.skills {animation:fadeInUp .8s linear;}
 
 /* portfolio */
 .con.portfolio h1 {text-align: left;}
@@ -269,7 +285,8 @@ input[id="radio_4"]:checked ~ .glider {transform: translateX(300%);}
 .con.portfolio .swiper .swiper-wrapper .swiper-slide .img .image {width:595px;height:334px;position: absolute;top: 28px;left: 28px;}
 .con.portfolio .swiper .swiper-wrapper .swiper-slide .img .image.human {background: url(./img/human.png) center / 100% no-repeat;}
 .con.portfolio .swiper .swiper-wrapper .swiper-slide .img .image.doob {background: url(./img/doob.png) center / 100% no-repeat;}
-.con.portfolio .swiper .swiper-wrapper .swiper-slide .img .image .explanation  {height: 100%;background: #fff;opacity: 0;display: flex;flex-direction: column;justify-content: center;align-items: center;font-family: 'score4';transition: all 0.8s;cursor: url(./img/mouse02.png), auto;}
+.con.portfolio .swiper .swiper-wrapper .swiper-slide .img .image.mint {background: url(./img/mint.png) center / 100% no-repeat;}
+.con.portfolio .swiper .swiper-wrapper .swiper-slide .img .image .explanation  {height: 100%;background: #fff;opacity: 0;display: flex;flex-direction: column;justify-content: center;align-items: center;font-family: 'score4';transition: all 0.8s;cursor: url(./img/mouse02.png), auto;text-align:center}
 .con.portfolio .swiper .swiper-wrapper .swiper-slide .img .image .explanation a {font-size: 14px;color: #fff;background: #222128;border-radius: 5px;padding: 10px 20px;margin-top: 20px;}
 .con.portfolio .swiper .swiper-wrapper .swiper-slide .img .image .explanation a:hover {background: #494a50;}
 .con.portfolio .swiper .swiper-wrapper .swiper-slide .img .image:hover .explanation {opacity: .9;}
@@ -288,10 +305,11 @@ input[id="radio_4"]:checked ~ .glider {transform: translateX(300%);}
 .swiper-slide {display: -webkit-box;}
 .swiper-slide img {display: block;width: 100%;height: 100%;object-fit: cover;}
 
+.fp-viewing-3 .con.portfolio {animation:fade 0.8s linear;}
 
 /* 태블릿 */
 @media only screen and (max-width: 1023px) {
-	#fp-nav {width: 100%;background: #ddd;top: 0;-webkit-transform: initial;}
+	#fp-nav {width: 100%;background: #222128;top: 0;-webkit-transform: initial;}
 	#fp-nav.fp-left {left: 0;}
 	#fp-nav ul {height: 65px;flex-direction: row;justify-content: space-around;align-items: center;}
 	#fp-nav ul li {width: 90px;height: 31px;}
@@ -312,7 +330,7 @@ input[id="radio_4"]:checked ~ .glider {transform: translateX(300%);}
 	
 	.con.portfolio {width: 530px;}
 	.con.portfolio h1 {font-size: 45px;}
-	.con.portfolio .swiper {min-height: 0;margin: 0;}
+	.con.portfolio .swiper {min-height: 0;margin-top: 5px;}
 	.con.portfolio .swiper .swiper-wrapper {height: 668px;}
 	.con.portfolio .swiper .swiper-wrapper .swiper-slide {display: block;}
 	.con.portfolio .swiper .swiper-wrapper .swiper-slide .img {width: 530px;height: 440px;}
@@ -351,7 +369,7 @@ input[id="radio_4"]:checked ~ .glider {transform: translateX(300%);}
 	.con.skills .container .tabs .tab.tab1 {width: 110px;}
 	.con.skills .container .tabs .tab.tab2 {width: 75px;}
 	.con.skills .container .tabs .glider {display: none;}
-	.con.skills .container .tabs .txt_box {width: 350px;font-size: 17px;}
+	.con.skills .container .tabs .txt_box {width: 350px;font-size: 15px;}
 
 	.con.portfolio {width: 340px;}
 	.con.portfolio h1 {font-size: 35px;}
@@ -369,6 +387,11 @@ input[id="radio_4"]:checked ~ .glider {transform: translateX(300%);}
 	.con.portfolio .swiper .swiper-button-prev {top: 363px;}
 	:root {--swiper-navigation-size: 21px;}
 }
+
+html[data-theme="dark"] {--bg-color: #2f3336;}
+
+html[data-theme="light"] {--bg-color: #f9f9f8;}
+html[data-theme="light"] h1 {color: #2f3336;}
 
 @keyframes dash {
     to {
@@ -391,30 +414,30 @@ input[id="radio_4"]:checked ~ .glider {transform: translateX(300%);}
 		opacity: 0;
 		transform: translate3d(0, 10%, 0);
 	}
+	100% {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
 }
 
 @keyframes fadeInUp {
 	0% {
 		opacity: 0;
-		transform: rotateX(45deg);
+		transform: rotateX(90deg);
+	}
+	100% {
+		opacity: 1;
+		transform: rotateX(0deg);
 	}
 }
 
 @keyframes fade {
 	0% {
 		opacity: 0;
-		transform: scale(1.2);
+		transform: scale(.3);
 	}
-}
-
-.test {
-	animation: fadeIn 1s;
-}
-
-.test02 {
-	animation: fadeInUp 1s;
-}
-
-.test03 {
-	animation: fade 1s;
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
 }
