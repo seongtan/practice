@@ -32,7 +32,7 @@ header .wrap .menu li a:hover {color: #ffe600;}
 .wrap .work .menu_box .first .drop a {display: block;font-size: 13px;text-align: center;color: #000;padding: 15px 0;}
 .wrap .work .menu_box .first .drop a:hover {background: #ffe600;}
 .wrap .work .menu_box .first:hover .drop {display: flex;flex-direction: column;justify-content: center;}
-.wrap .work .box {display: flex;justify-content: space-between;margin-top: 75px;}
+/* .wrap .work .box {display: flex;justify-content: space-between;margin-top: 75px;} */
 /* .wrap .work .box .short {width: 370px;height: 300px;}
 .wrap .work .box .long {width: 370px;height: 495px;margin-top: 30px;}
 .wrap .work .box .left .short {background: url(../Mint/img/2.png);}
@@ -45,6 +45,7 @@ header .wrap .menu li a:hover {color: #ffe600;}
 .wrap .work .btn_box {text-align: center;margin: 50px 0;}
 
 .wrap .work .box.bo {flex-wrap: wrap;align-items: flex-end;gap: 30px;}
+.wrap .work .box li {}
 .wrap .work .box li a {display: inline-block;}
 /* .wrap .work .box li:nth-child(odd) a {height: 300px;}
 .wrap .work .box li:nth-child(even) a {height: 495px;}
