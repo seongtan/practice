@@ -12,6 +12,7 @@ header .wrap .menu li a {color: #000;}
 header .wrap .menu li a:hover {color: #ffe600;}
 
 /* hello */
+.wrap .blind { border: 0; clip: rect(0 0 0 0); clip-path: inset(50%); width: 1px; height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; white-space: nowrap; }
 .wrap .hello {display: flex;justify-content: space-between;align-items: center;padding: 130px 0;}
 .wrap .tit {font-size: 60px;}
 .wrap .hello .hello_tit p {font-size: 13px;line-height: 2;margin-top: 30px;}
