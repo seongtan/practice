@@ -63,6 +63,7 @@ body {overflow-y: hidden;background-color: var(--bg-color);}
     src: url(./S-Core_Dream_OTF/SCDream5.otf);
 }
 
+/* 다크 모드 버튼 */
 .dark {position: fixed;top: 12px;right: 10px;z-index: 999;}
 .dark input[type=checkbox] {display: none;}
 .dark input[type=checkbox]:checked + label {background: #494a50;}
@@ -73,6 +74,7 @@ body {overflow-y: hidden;background-color: var(--bg-color);}
 .dark label:before {background-color: #ffa41b;}
 .dark label:after {background: #494a50;left: -75px;transform: scale(0.00001);}
 
+/*  */
 .con {height: 100vh;width: 1250px;margin: 0 auto;padding: 150px 120px;box-sizing: border-box;display: flex;flex-direction: column;justify-content: center;}
 .con h1 {font-family: 'vitro';font-size: 50px;color: #fff;text-align: center;}
 
@@ -229,6 +231,7 @@ input[id="radio_4"]:checked ~ .glider {transform: translateX(300%);}
 	:root {--swiper-navigation-size: 21px;}
 }
 
+/* 라이트 모드 */
 [data-theme="dark"] {--bg-color: #2f3336;}
 
 [data-theme="light"] {--bg-color: #f9f9f8;}
@@ -256,6 +259,7 @@ input[id="radio_4"]:checked ~ .glider {transform: translateX(300%);}
 [data-theme="light"] .con.portfolio .swiper .swiper-wrapper .swiper-slide .swiper-pagination .swiper-pagination-bullet-active {background: #2f3336;opacity: 1;}
 [data-theme="light"] .con.home .text_line {stroke: #2f3336;}
 
+/* 키프레임 */
 @keyframes dash {
     to {
     stroke-dashoffset: 0;
