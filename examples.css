@@ -101,11 +101,11 @@ body {overflow-y: hidden;background-color: var(--bg-color);}
 .con.skills .container .tabs .glider {position: absolute;height: 54px;width: 200px;background: #494a50;border-radius: 10px;transition: 0.25s ease-out;}
 .con.skills .container .tabs .txt_box {display: flex;justify-content: center;width: 800px;font-family: 'score3';font-size: 19px;line-height: 50px;color: #fff;position: absolute;top: 120px;}
 .con.skills .container .tabs .txt_box .txt {display: none;}
-input[type="radio"] {display: none;}
-input[type="radio"]:checked + label {color: #fff;z-index: 2;}
-input[id="radio_2"]:checked ~ .glider {transform: translateX(100%);}
-input[id="radio_3"]:checked ~ .glider {transform: translateX(200%);}
-input[id="radio_4"]:checked ~ .glider {transform: translateX(300%);}
+.con.skills .container .tabs input[type="radio"] {display: none;}
+.con.skills .container .tabs input[type="radio"]:checked + label {color: #fff;z-index: 2;}
+.con.skills .container .tabs input[id="radio_2"]:checked ~ .glider {transform: translateX(100%);}
+.con.skills .container .tabs input[id="radio_3"]:checked ~ .glider {transform: translateX(200%);}
+.con.skills .container .tabs input[id="radio_4"]:checked ~ .glider {transform: translateX(300%);}
 .con.skills .container .tabs #radio_1:checked ~ .txt_box #radio_1_txt,
 .con.skills .container .tabs #radio_2:checked ~ .txt_box #radio_2_txt,
 .con.skills .container .tabs #radio_3:checked ~ .txt_box #radio_3_txt,
