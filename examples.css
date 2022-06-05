@@ -185,7 +185,7 @@ body {background-color: var(--bg-color);}
 /* 모바일 */
 @media only screen and (max-width:767px){
 	#fp-nav ul {width: 100%;}
-	#fp-nav ul li {width: 76px;height: 27px;margin: 0px;}
+	#fp-nav ul li {width: 78px;height: 27px;margin: 0px;}
 	#fp-nav ul li:last-child {width: 95px;}
 	#fp-nav ul li a {width: 78px;}
 	#fp-nav ul li:last-child a {width: 97px;}
