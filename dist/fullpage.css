@@ -40,17 +40,6 @@ html.fp-enabled,
     -webkit-transition: all 0.3s ease-out; /* Safari<=6 Android<=4.3 */
     transition: all 0.3s ease-out;
 }
-/* .fp-table{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-} */
-/* .fp-table::before , 
-.fp-table::after {
-      content:'';
-      flex:1;
-} */
 .fp-slidesContainer {
     float: left;
     position: relative;
