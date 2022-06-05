@@ -198,13 +198,17 @@ body {background-color: var(--bg-color);}
 	.con.about .about_me p {font-size: 18px;}
 	.con.about .about_desc {width: 338px;padding: 50px 100px 0;}
 	.con.about .about_desc li {font-size: 16px;line-height: 50px;}
-	.con.skills .skills_tabs {width:calc(100% - 100px);margin:50px}
-	.con.skills .skills_tabs::after {width:100%;;top: 65px;}
+	.con.skills .skills_tabs {width: 350px;padding: 5px;}
+	.con.skills .skills_tabs::after {width: 350px;top: 65px;}
 	.con.skills .skills_tabs .tabs .tab {font-size: 18px;}
 	.con.skills .skills_tabs .tabs .tab.tab1 {width: 110px;}
 	.con.skills .skills_tabs .tabs .tab.tab2 {width: 75px;}
 	.con.skills .skills_tabs .tabs .active {display: none;}
-	.con.skills .skills_tabs .tabs .txt_box {width:100%;font-size: 15px;}
+	.con.skills .skills_tabs .tabs .txt_box {width: 350px;font-size: 15px;}
+	[data-theme="light"] .con.skills .skills_tabs .tabs {color: #ccc;}
+	[data-theme="light"] .con.skills .skills_tabs .tabs input[type="radio"]:checked + label {color: #2f3336;}
+
+
 	.con.portfolio {width: 340px;}
 	.con.portfolio h1 {font-size: 35px;}
 	.con.portfolio .swiper .swiper-wrapper {height: 430px;}
