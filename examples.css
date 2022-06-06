@@ -106,7 +106,7 @@ body {background-color: var(--bg-color);}
 [data-theme="light"] .con .tit {color: #2f3336;}
 [data-theme="light"] .con.home .text_line {stroke: #2f3336;}
 [data-theme="light"] .con.home .text_line text {text-shadow: 2px 2px 3px #fff;animation: dash 4s linear forwards, filling2 3s ease-in forwards;}
-[data-theme="light"] .con.about .about_me p {color: #2f3336;font-weight: bold;letter-spacing: -.3px;}
+[data-theme="light"] .con.about .about_me p {color: #2f3336;font-weight: bold;letter-spacing: -.5px;}
 [data-theme="light"] .con.about .about_desc li {color: #2f3336;font-family: 'score5';}
 [data-theme="light"] .con.about .about_desc li span::before {border-color: #2f3336;}
 [data-theme="light"] .con.skills .skills_tabs {background-color: #fff;box-shadow: 0px 0px 5px #ddd;}
