@@ -125,8 +125,8 @@ html.fp-enabled,
 }
 #fp-nav ul,
 .fp-slidesNav ul {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 #fp-nav ul li,
 .fp-slidesNav ul li {
@@ -192,8 +192,8 @@ html.fp-enabled,
 .fp-scrollable .fp-section,
 .fp-scrollable .fp-slide{
    /* Fallback for browsers that do not support Custom Properties */
-   height: 100vh;
-   height: calc(var(--vh, 1vh) * 100);
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
 }
 
 /* Disabling vertical centering on scrollable elements */

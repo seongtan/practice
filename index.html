@@ -9,6 +9,7 @@
     <meta name="keywords"  content="fullpage,jquery,demo,scroll,loop,continuous" />
     <meta name="Resource-type" content="Document" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
 	<script src="http://code.jquery.com/jquery-1.12.3.min.js"></script>
 
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
@@ -298,7 +299,6 @@
 </div>
 
 <script type="text/javascript" src="./dist/fullpage.js"></script>
-<script type="text/javascript" src="examples.js"></script>
 <script type="text/javascript">
     var myFullpage = new fullpage('#fullpage', {
         navigation:true,
@@ -308,57 +308,57 @@
 </script>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-    <script>
-		window.counter = function() {
-			// this refers to the html element with the data-scroll-showCallback tag
-			var span = this.querySelector('span');
-			var current = parseInt(span.textContent);
+<script>
+	window.counter = function() {
+		// this refers to the html element with the data-scroll-showCallback tag
+		var span = this.querySelector('span');
+		var current = parseInt(span.textContent);
 
-			span.textContent = current + 1;
-		};
+		span.textContent = current + 1;
+	};
 
-		// document.addEventListener('DOMContentLoaded', function(){
-		// 	var trigger = new ScrollTrigger({
-		// 	addHeight: a
-		// 	});
-		// });
+	// document.addEventListener('DOMContentLoaded', function(){
+	// 	var trigger = new ScrollTrigger({
+	// 	addHeight: a
+	// 	});
+	// });
 
-		var swiper = new Swiper(".mySwiper", {
-			direction: "vertical",
-			slidesPerView: 1,
-			spaceBetween: 30,
-			mousewheel: true,
-			pagination: {
-				el: ".swiper-pagination",
-				clickable: true,
-			},
-			navigation: {
-				nextEl: ".swiper-button-next",
-				prevEl: ".swiper-button-prev",
-			},
+	var swiper = new Swiper(".mySwiper", {
+		direction: "vertical",
+		slidesPerView: 1,
+		spaceBetween: 30,
+		mousewheel: true,
+		pagination: {
+			el: ".swiper-pagination",
+			clickable: true,
+		},
+		navigation: {
+			nextEl: ".swiper-button-next",
+			prevEl: ".swiper-button-prev",
+		},
+	});
+    
+	// 포트폴리오에 마우스 오버 시 부모 스크롤 제어
+	$('.swiper').mouseover(function() {
+		$('body').bind('mousewheel DOMMouseScroll', function() {
+			return false;
 		});
-		
-		// 포트폴리오에 마우스 오버 시 부모 스크롤 제어
-		$('.swiper').mouseover(function() {
-			$('body').bind('mousewheel DOMMouseScroll', function() {
-				return false;
-			});
-			$(this).bind('mousewheel DOMMouseScroll', function() {
-				return true;
-			});
+		$(this).bind('mousewheel DOMMouseScroll', function() {
+			return true;
 		});
-		$('.swiper').mouseout(function() {
-			$(this).bind('mousewheel DOMMouseScroll', function() {
-				return true;
-			});
-			$('body').off('scroll touchmove mousewheel');
+	});
+	$('.swiper').mouseout(function() {
+		$(this).bind('mousewheel DOMMouseScroll', function() {
+			return true;
 		});
+		$('body').off('scroll touchmove mousewheel');
+	});
 
-        const $darkmodeToggle = document.querySelector('#toggle');
+    const $darkmodeToggle = document.querySelector('#toggle');
 
-        $darkmodeToggle.addEventListener('change', ({target}) => {
-            document.documentElement.dataset.theme = (target.checked) ? 'dark' : 'light'
-        });
-	</script>
+    $darkmodeToggle.addEventListener('change', ({target}) => {
+        document.documentElement.dataset.theme = (target.checked) ? 'dark' : 'light'
+    });
+</script>
 </body>
 </html>
