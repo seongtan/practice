@@ -48,9 +48,9 @@ body {background-color: var(--bg-color);}
 .con.about .about_desc li strong {display: inline-block;width: 150px;}
 .con.about .about_desc li span {position: relative;}
 .con.about .about_desc li span::before {content: '';display: block;border-left: 2px solid #fff;position: absolute;top: 2px;bottom: 0px;left: -30px;}
-/* test */
-.fp-viewing-1 .con.about .about_me {animation: fadeIn 1s;} 
-.fp-viewing-1 .con.about .about_desc {animation: fadeIn 1s;animation-delay: .2s;}
+.fp-viewing-1 .con.about {animation: fadeIn 1.2s;}
+/* .fp-viewing-1 .con.about .about_me {animation: fadeIn 1s;} 
+.fp-viewing-1 .con.about .about_desc {animation: fadeIn 1s;animation-delay: .2s;} */
 
 /* skills */
 .con.skills .skills_tabs {min-height: 350px;background: #222128;border-radius: 15px;padding: 0.75rem;margin: 50px auto 0;position: relative;overflow:hidden}
@@ -259,7 +259,6 @@ body {background-color: var(--bg-color);}
     fill-opacity: 1;
     }
 }
-/* test */
 /* about */
 @keyframes fadeIn {
 	0% {
